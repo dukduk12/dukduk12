@@ -8,10 +8,16 @@
 <div>
 
 ## 👀 About Me
-- :raising_hand: AI 신약 개발 및 다분야 AI 연구 중인 화학자 & 개발자
-- :fire: 머신러닝과 딥러닝 기반 연구 및 백엔드 개발 경험 보유
-- :mortar_board: 화학 및 소프트웨어 융합 전공, 바이오공학 AI 신약 개발 연구 참여
+- 🧪 Researcher passionate about integrating Chemistry and AI  
+- 📊 Experience analyzing phthalates in food packaging using Soxhlet extraction and GC-MS
+- 🎓 Completed BDA SQL course with honors (7th batch)
+- 🌱 Participated in Global Challenger vegan cosmetics project in the USA
+- 🔬 6 months as an undergraduate researcher in AI drug discovery lab
+- 💻 Currently working on machine learning and backend development projects  
 
+### 🚀 Key Project: Ahn Heewon
+Designed and implemented a microservices-based architecture using Docker with multiple backend servers (API, mediasoup SFU, gRPC deep learning inference, MySQL), integrated IoT via gRPC, developed mobile app UI/UX (React Native), secured APIs with JWT, and utilized Figma for wireframing; also experienced in cheminformatics tools like Chemprop for molecular property prediction.
+  
 ## 🧱 Tech Stack
 
 ### Language
@@ -37,9 +43,7 @@
 <br/>
 
 ## 🤔 Github Stats
-
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=본인아이디&show_icons=true&theme=radical)](https://github.com/본인아이디)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=dukduk12&show_icons=true&theme=radical)](https://github.com/dukduk12)
 <br/>
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=본인아이디&layout=compact&theme=radical)](https://github.com/본인아이디)
-
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dukduk12&layout=compact&theme=radical)](https://github.com/dukduk12)
 </div>
