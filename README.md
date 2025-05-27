@@ -55,7 +55,7 @@ Designed and implemented a microservices-based architecture using Docker with mu
 <br/>
 
 ## 🤔 Github Stats
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=dukduk12&show_icons=true&theme=radical)](https://github.com/dukduk12)
-<br/>
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dukduk12&layout=compact&theme=radical)](https://github.com/dukduk12)
+[![GitHub stats](https://github-readme-stats.vercel.app/api?username=dukduk12&show_icons=true&theme=tokyonight&count_private=true)](https://github.com/dukduk12)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dukduk12&layout=compact&theme=tokyonight)](https://github.com/dukduk12)
 </div>
