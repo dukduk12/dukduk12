@@ -1,6 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=ChemoDEV.ai&fontSize=40&fontAlignY=35&desc=AI-powered%20Chemical%20Developer%20%7C%20Drug%20Discovery%20&amp;%20Deep%20Learning&descAlignY=60&descAlign=50)
-
-
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:22c1c3,100:fdbb2d&height=200&section=header&text=ChemoDEV.ai&fontSize=40&fontAlignY=35&desc=Exploring%20Science%20%26%20Code%20with%20AI%20%7C%20Multi-domain%20AI%20Developer&descAlignY=60&descAlign=50)
 
 
 <!--
