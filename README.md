@@ -25,18 +25,17 @@ Designed and implemented a microservices-based architecture using Docker with mu
 <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white" />
 <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white" />
 <img src="https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=React&logoColor=white" />
-<img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=Express&logoColor=white" />
-<img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=Flask&logoColor=white" />
-<img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=Django&logoColor=white" />
+<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square" />
 
 ### Database & Cache
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white" />
 <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=Redis&logoColor=white" />
+<img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=SQLite&logoColor=white" />
 
 ### DevOps & Communication
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white" />
 <img src="https://img.shields.io/badge/gRPC-4285F4?style=flat-square&logo=gRPC&logoColor=white" />
-<img src="https://img.shields.io/badge/Mediasoup-000000?style=flat-square&logo=Mediasoup&logoColor=white" />
+<img src="https://img.shields.io/badge/Mediasoup-000000?style=flat-square" />
 <img src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=Slack&logoColor=white" />
 
 ### Testing & ML
@@ -50,11 +49,10 @@ Designed and implemented a microservices-based architecture using Docker with mu
 <img src="https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=Tableau&logoColor=white" />
 
 ### Others
-<img src="https://img.shields.io/badge/RESTful_API-4DB6AC?style=flat-square" />
-<img src="https://img.shields.io/badge/JWT-000000?style=flat-square" />
 <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
 <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" />
 <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white" />
+>
 
 <br/>
 
