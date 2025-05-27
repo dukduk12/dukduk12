@@ -1,4 +1,7 @@
-## Hi there 👋
+// Header 코드
+![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=ChemoDEV.ai&fontSize=40&fontAlignY=35&desc=AI-powered%20Chemical%20Developer%20%7C%20Drug%20Discovery%20%26%20Deep%20Learning&descAlignY=60&descAlign=50)
+
+
 
 <!--
 **dukduk12/dukduk12** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
