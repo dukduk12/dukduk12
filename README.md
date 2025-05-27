@@ -1,7 +1,7 @@
 <div>
 
 <!-- Header -->
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:a8edea,50:31c6be,100:a0f1b8&height=300&section=header&text=ChemoDEV.ai&fontSize=50&fontAlignY=35&fontColor=ffffff&desc=💡%20Coding%20in%20the%20language%20of%20science%2C%20imagining%20with%20AI&descAlignY=70&descAlign=50)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:a8edea,50:31c6be,100:a0f1b8&height=300&section=header&text=ChemDEV.ai&fontSize=50&fontAlignY=35&fontColor=ffffff&desc=💡%20Coding%20in%20the%20language%20of%20science%2C%20imagining%20with%20AI&descAlignY=70&descAlign=50)
 
 </div>
 
