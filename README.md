@@ -1,1 +1,1 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:38ef7d,50:11998e,100:fdbb2d&height=200&section=header&text=ChemoDEV.ai&fontSize=40&fontAlignY=35&desc=Coding%20in%20the%20language%20of%20science%2C%20imagining%20with%20AI&descAlignY=60&descAlign=50&fontColor=ffffff)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:a8edea,50:31c6be,100:a0f1b8&height=200&section=header&text=ChemoDEV.ai&fontSize=40&fontAlignY=35&fontColor=ffffff&desc=💡%20Coding%20science%20with%20heart%2C%20imagining%20futures%20with%20AI&descAlignY=60&descAlign=50)
