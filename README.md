@@ -21,6 +21,7 @@ Designed and implemented a microservices-based architecture using Docker with mu
 ## 🧱 Tech Stack
 ### Language & Frameworks  
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white" /> 
+<img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white" /> 
 <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white" />  
 <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white" />  
@@ -55,7 +56,7 @@ Designed and implemented a microservices-based architecture using Docker with mu
 <br/>
 
 ## 🤔 Github Stats
-[![GitHub stats](https://github-readme-stats.vercel.app/api?username=dukduk12&show_icons=true&theme=tokyonight&count_private=true)](https://github.com/dukduk12)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dukduk12&layout=compact&theme=tokyonight)](https://github.com/dukduk12)
-</div>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dukduk12&layout=compact&theme=tokyonight" width="45%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=notone0818&layout=compact&theme=tokyonight" width="45%" />
+</p>
