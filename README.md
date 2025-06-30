@@ -56,7 +56,4 @@ Designed and implemented a microservices-based architecture using Docker with mu
 <br/>
 
 ## 🤔 Github Stats
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dukduk12&layout=compact&theme=tokyonight" width="45%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=notone0818&layout=compact&theme=tokyonight" width="45%" />
-</p>
+[![GitHub stats](https://github-readme-stats.vercel.app/api?username=dukduk12&show_icons=true&theme=tokyonight&count_private=true)](https://github.com/dukduk12)
