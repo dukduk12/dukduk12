@@ -59,4 +59,4 @@ Designed and implemented a microservices-based architecture using Docker with mu
 <img src="https://ghchart.rshah.org/31c6be/dukduk12" alt="dukduk12's Github chart" />
 
 ## 📊 Combined Language Usage
-<img src="https://raw.githubusercontent.com/dukduk12/dukduk12/output/generated/languages.svg" width="45%" />
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dukduk12&layout=compact)](https://github.com/dukduk12)
