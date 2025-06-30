@@ -55,5 +55,8 @@ Designed and implemented a microservices-based architecture using Docker with mu
 <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white" />  
 <br/>
 
-## 🤔 Github Stats
-[![GitHub stats](https://github-readme-stats.vercel.app/api?username=dukduk12&show_icons=true&theme=tokyonight&count_private=true)](https://github.com/dukduk12)
+## 🟩 Contribution GrapH
+<img src="https://ghchart.rshah.org/31c6be/dukduk12" alt="dukduk12's Github chart" />
+
+## 📊 Combined Language Usage
+<img src="https://raw.githubusercontent.com/dukduk12/dukduk12/output/generated/languages.svg" width="45%" />
