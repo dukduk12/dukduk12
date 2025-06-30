@@ -61,8 +61,4 @@ Designed and implemented a microservices-based architecture using Docker with mu
 </p>
 
 ## 📊 Combined Language Usage
-<p align="center">
-  <a href="https://github.com/dukduk12">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dukduk12&layout=compact&theme=tokyonight" alt="Top Langs" />
-  </a>
-</p>
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dukduk12&layout=compact&theme=tokyonight&hide=css,html)](https://github.com/dukduk12)
