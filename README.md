@@ -55,8 +55,5 @@ Designed and implemented a microservices-based architecture using Docker with mu
 <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white" />  
 <br/>
 
-### ⌨️ TOP Langs
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dukduk12&layout=compact&theme=vue&langs_count=6&hide=html,css,shell&hide_border=true&cache_seconds=1800)
-
 ### 🌱 Contribution Graph
 ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=dukduk12&bg_color=0d1117&color=9adede&line=7cccd5&point=5bbec9&area=true&hide_border=true)
