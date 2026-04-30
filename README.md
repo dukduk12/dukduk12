@@ -15,7 +15,7 @@
 - 🔬 6 months as an undergraduate researcher in AI drug discovery lab
 - 💻 Currently working on machine learning and backend development projects  
 
-### 🚀 Key Project: Ahn Heewon
+### 🚀 Key Project: An Heewon
 Designed and implemented a microservices-based architecture using Docker with multiple backend servers (API, mediasoup SFU, gRPC deep learning inference, MySQL), integrated IoT via gRPC, developed mobile app UI/UX (React Native), secured APIs with JWT, and utilized Figma for wireframing; also experienced in cheminformatics tools like Chemprop for molecular property prediction.
   
 ## 🧱 Tech Stack
