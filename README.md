@@ -11,7 +11,7 @@
 - 🧪 Interested in Chemistry, AI, and Backend Engineering  
 - 🔬 Undergraduate researcher in AI drug discovery lab  
 - 🎓 Completed BDA SQL course with honors (7th batch)  
-- 💻 Building backend systems with Spring Boot and microservice architecture
+- 💻 Building backend systems with Spring Boot and microservice architecture  
 - ⚙️ Interested in AI-integrated services, distributed systems, and real-time communication  
 - 📊 Experience with SQL, data analysis, and ML pipelines  
 - 🌱 Participated in Global Challenger vegan cosmetics project in the USA  
@@ -29,39 +29,50 @@ Integrated IoT communication, JWT authentication, React Native mobile UI, and re
 
 ### Backend
 
-<img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white" />
-<img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=SpringBoot&logoColor=white" />
-<img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=SpringSecurity&logoColor=white" />
-<img src="https://img.shields.io/badge/MyBatis-000000?style=flat-square" />
-<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white" />
-<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=FastAPI&logoColor=white" />
+<p>
+  <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=SpringBoot&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=SpringSecurity&logoColor=white" />
+  <img src="https://img.shields.io/badge/MyBatis-000000?style=flat-square" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=FastAPI&logoColor=white" />
+</p>
 
 ### Frontend & Mobile
 
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black" />
-<img src="https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=React&logoColor=black" />
-<img src="https://img.shields.io/badge/Thymeleaf-005F0F?style=flat-square&logo=Thymeleaf&logoColor=white" />
+<p>
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black" />
+  <img src="https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=React&logoColor=black" />
+  <img src="https://img.shields.io/badge/Thymeleaf-005F0F?style=flat-square&logo=Thymeleaf&logoColor=white" />
+</p>
 
 ### Database & Infra
 
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white" />
-<img src="https://img.shields.io/badge/Oracle_DB-F80000?style=flat-square&logo=Oracle&logoColor=white" />
-<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=Redis&logoColor=white" />
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white" />
-<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=GitHubActions&logoColor=white" />
+<p>
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white" />
+  <img src="https://img.shields.io/badge/Oracle_DB-F80000?style=flat-square&logo=Oracle&logoColor=white" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=Redis&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=GitHubActions&logoColor=white" />
+</p>
 
 ### Communication & Monitoring
 
-<img src="https://img.shields.io/badge/gRPC-4285F4?style=flat-square&logo=Google&logoColor=white" />
-<img src="https://img.shields.io/badge/WebRTC-333333?style=flat-square" />
-<img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=Grafana&logoColor=white" />
+<p>
+  <img src="https://img.shields.io/badge/gRPC-4285F4?style=flat-square&logo=Google&logoColor=white" />
+  <img src="https://img.shields.io/badge/WebRTC-333333?style=flat-square" />
+  <img src="https://img.shields.io/badge/mediasoup-000000?style=flat-square" />
+  <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=Grafana&logoColor=white" />
+</p>
 
 ### AI / Data
 
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white" />
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=PyTorch&logoColor=white" />
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" />
-<img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=MLflow&logoColor=white" />
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=PyTorch&logoColor=white" />
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" />
+  <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=MLflow&logoColor=white" />
+</p>
 
 ---
 
@@ -79,9 +90,8 @@ Integrated IoT communication, JWT authentication, React Native mobile UI, and re
 
 <div align="center">
 
-<img height="160em" src="https://github-readme-stats.vercel.app/api?username=dukduk12&show_icons=true&theme=transparent&hide_border=true&title_color=7cccd5&icon_color=31c6be&text_color=c9d1d9&cache_seconds=1800" />
-
-<img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dukduk12&layout=compact&theme=transparent&hide_border=true&title_color=7cccd5&text_color=c9d1d9&langs_count=6&cache_seconds=1800" />
+<img height="170em" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=dukduk12&theme=github" />
+<img height="170em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=dukduk12&theme=github" />
 
 </div>
 
