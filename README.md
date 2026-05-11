@@ -1,58 +1,94 @@
-<div>
+<div align="center">
 
-<!-- Header -->
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:a8edea,50:31c6be,100:a0f1b8&height=300&section=header&text=ChemDEV.ai&fontSize=50&fontAlignY=35&fontColor=ffffff&desc=💡%20Coding%20in%20the%20language%20of%20science%2C%20imagining%20with%20AI&descAlignY=70&descAlign=50)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:a8edea,50:31c6be,100:a0f1b8&height=300&section=header&text=ChemDEV.ai&fontSize=50&fontAlignY=35&fontColor=ffffff&desc=Building%20AI-enabled%20backend%20systems&descAlignY=70&descAlign=50)
 
 </div>
 
-<div>
+---
 
 ## 👀 About Me
-- 🧪 Researcher passionate about integrating Chemistry and AI  
-- 📊 Experience analyzing phthalates in food packaging using Soxhlet extraction and GC-MS
-- 🎓 Completed BDA SQL course with honors (7th batch)
-- 🌱 Participated in Global Challenger vegan cosmetics project in the USA
-- 🔬 6 months as an undergraduate researcher in AI drug discovery lab
-- 💻 Currently working on machine learning and backend development projects  
 
-### 🚀 Key Project: An Heewon
-Designed and implemented a microservices-based architecture using Docker with multiple backend servers (API, mediasoup SFU, gRPC deep learning inference, MySQL), integrated IoT via gRPC, developed mobile app UI/UX (React Native), secured APIs with JWT, and utilized Figma for wireframing; also experienced in cheminformatics tools like Chemprop for molecular property prediction.
-  
+- 🧪 Interested in Chemistry, AI, and Backend Engineering  
+- 🔬 Undergraduate researcher in AI drug discovery lab  
+- 🎓 Completed BDA SQL course with honors (7th batch)  
+- 💻 Building backend systems with Spring Boot and microservice architecture
+- ⚙️ Interested in AI-integrated services, distributed systems, and real-time communication  
+- 📊 Experience with SQL, data analysis, and ML pipelines  
+- 🌱 Participated in Global Challenger vegan cosmetics project in the USA  
+
+---
+
+## 🚀 Key Project
+
+Designed and implemented a Docker-based microservices architecture with API servers, gRPC inference, mediasoup SFU, Redis, and MySQL.  
+Integrated IoT communication, JWT authentication, React Native mobile UI, and real-time monitoring systems.
+
+---
+
 ## 🧱 Tech Stack
-### Language & Frameworks  
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white" /> 
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white" /> 
-<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white" />  
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white" />  
-<img src="https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=React&logoColor=white" />  
-<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square" />  
 
-### Database & Cache  
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white" />  
-<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=Redis&logoColor=white" />  
-<img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=SQLite&logoColor=white" />  
+### Backend
 
-### DevOps & Communication  
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white" />  
-<img src="https://img.shields.io/badge/gRPC-4285F4?style=flat-square&logo=gRPC&logoColor=white" />  
-<img src="https://img.shields.io/badge/Mediasoup-000000?style=flat-square" />  
+<img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white" />
+<img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=SpringBoot&logoColor=white" />
+<img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=SpringSecurity&logoColor=white" />
+<img src="https://img.shields.io/badge/MyBatis-000000?style=flat-square" />
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white" />
+<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=FastAPI&logoColor=white" />
 
-### Testing & ML  
-<img src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=Selenium&logoColor=white" />  
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=PyTorch&logoColor=white" />  
-<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=TensorFlow&logoColor=white" />  
+### Frontend & Mobile
 
-### Monitoring & Visualization  
-<img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=Prometheus&logoColor=white" />  
-<img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=Grafana&logoColor=white" />  
-<img src="https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=Tableau&logoColor=white" />  
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black" />
+<img src="https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=React&logoColor=black" />
+<img src="https://img.shields.io/badge/Thymeleaf-005F0F?style=flat-square&logo=Thymeleaf&logoColor=white" />
 
-### Collaboration & Productivity Tools  
-<img src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=Slack&logoColor=white" />  
-<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />  
-<img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" />  
-<img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white" />  
-<br/>
+### Database & Infra
 
-### 🌱 Contribution Graph
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=dukduk12&bg_color=0d1117&color=9adede&line=7cccd5&point=5bbec9&area=true&hide_border=true)
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white" />
+<img src="https://img.shields.io/badge/Oracle_DB-F80000?style=flat-square&logo=Oracle&logoColor=white" />
+<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=Redis&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white" />
+<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=GitHubActions&logoColor=white" />
+
+### Communication & Monitoring
+
+<img src="https://img.shields.io/badge/gRPC-4285F4?style=flat-square&logo=Google&logoColor=white" />
+<img src="https://img.shields.io/badge/WebRTC-333333?style=flat-square" />
+<img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=Grafana&logoColor=white" />
+
+### AI / Data
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white" />
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=PyTorch&logoColor=white" />
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" />
+<img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=MLflow&logoColor=white" />
+
+---
+
+## 🌱 Currently Exploring
+
+- Spring Boot Architecture
+- Transaction & Concurrency Control
+- Distributed Systems & MSA
+- AI-integrated Backend Services
+- Docker & DevOps Workflows
+
+---
+
+## 📈 GitHub Stats
+
+<div align="center">
+
+<img height="160em" src="https://github-readme-stats.vercel.app/api?username=dukduk12&show_icons=true&theme=transparent&hide_border=true&title_color=7cccd5&icon_color=31c6be&text_color=c9d1d9&cache_seconds=1800" />
+
+<img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dukduk12&layout=compact&theme=transparent&hide_border=true&title_color=7cccd5&text_color=c9d1d9&langs_count=6&cache_seconds=1800" />
+
+</div>
+
+---
+
+<div align="center">
+
+### 💡 Backend × AI Integration × Real-world Services
+
+</div>
