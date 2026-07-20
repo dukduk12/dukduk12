@@ -18,7 +18,7 @@ README = Path("README.md")
 BLOG_URL = "https://dukduk12.github.io/posts/"
 MEDIUM_FEED = "https://medium.com/feed/@sallyinner59"
 USER_AGENT = "dukduk12-profile-readme/1.0"
-MAX_POSTS = 2
+MAX_POSTS = 1
 GITHUB_USER = "dukduk12"
 MAX_LANGUAGES = 6
 
@@ -28,6 +28,7 @@ class Post:
     title: str
     url: str
     date: str = ""
+    image: str = ""
 
 
 def fetch(url: str) -> bytes:
@@ -76,12 +77,37 @@ class BlogParser(HTMLParser):
             self.in_heading = False
 
 
+class PreviewParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.image = ""
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if self.image:
+            return
+        attributes = dict(attrs)
+        if tag == "meta" and attributes.get("property") in {"og:image", "twitter:image"}:
+            self.image = attributes.get("content") or ""
+        elif tag == "img":
+            self.image = attributes.get("src") or ""
+
+
+def preview_image(url: str) -> str:
+    parser = PreviewParser()
+    parser.feed(fetch(url).decode("utf-8"))
+    return urljoin(url, parser.image) if parser.image else ""
+
+
 def blog_posts() -> list[Post]:
     parser = BlogParser()
     parser.feed(fetch(BLOG_URL).decode("utf-8"))
     if not parser.posts:
         raise RuntimeError("No blog posts found")
-    return parser.posts[:MAX_POSTS]
+    posts = []
+    for post in parser.posts[:MAX_POSTS]:
+        image = preview_image(post.url)
+        posts.append(Post(post.title, post.url, post.date, image))
+    return posts
 
 
 def medium_posts() -> list[Post]:
@@ -92,8 +118,13 @@ def medium_posts() -> list[Post]:
         url = (item.findtext("link") or "").strip()
         published = (item.findtext("pubDate") or "").strip()
         date = parsedate_to_datetime(published).strftime("%Y.%m.%d") if published else ""
+        encoded = item.findtext(
+            "{http://purl.org/rss/1.0/modules/content/}encoded"
+        ) or ""
+        image_match = re.search(r'<img[^>]+src=["\']([^"\']+)', encoded)
+        image = html.unescape(image_match.group(1)) if image_match else ""
         if title and url:
-            posts.append(Post(title, url, date))
+            posts.append(Post(title, url, date, image))
     if not posts:
         raise RuntimeError("No Medium posts found")
     return posts
@@ -127,31 +158,28 @@ def language_stats() -> list[tuple[str, float]]:
 
 def render_posts(posts: list[Post]) -> str:
     lines = []
-    for post in posts:
+    for index, post in enumerate(posts):
         clean_title = post.title.replace("[검토중|", "[")
         title = html.escape(clean_title)
         url = html.escape(post.url, quote=True)
         date = f"<br><sub>{html.escape(post.date)}</sub>" if post.date else ""
+        if index == 0 and post.image:
+            image = html.escape(post.image, quote=True)
+            lines.append(
+                f'<a href="{url}"><img src="{image}" alt="{title}" '
+                'width="720"></a>'
+            )
         lines.append(f'<p><a href="{url}"><strong>{title}</strong></a>{date}</p>')
     return "\n".join(lines)
 
 
 def render_languages(languages: list[tuple[str, float]]) -> str:
-    rows = [
-        "<table>",
-        "  <tr><th align=\"left\">Language</th><th align=\"left\">Share</th><th align=\"right\">%</th></tr>",
-    ]
+    rows = ["<pre>"]
     for language, percentage in languages:
         filled = max(1, round(percentage / 5))
         bar = "■" * filled + "□" * (20 - filled)
-        rows.append(
-            "  <tr>"
-            f"<td><strong>{html.escape(language)}</strong></td>"
-            f"<td><code>{bar}</code></td>"
-            f"<td align=\"right\"><strong>{percentage:.1f}%</strong></td>"
-            "</tr>"
-        )
-    rows.append("</table>")
+        rows.append(f"{language[:18]:<18}  {bar}  {percentage:>5.1f}%")
+    rows.append("</pre>")
     return "\n".join(rows)
 
 
