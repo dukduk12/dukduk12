@@ -1,104 +1,145 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:a8edea,50:31c6be,100:a0f1b8&height=300&section=header&text=ChemDEV.ai&fontSize=50&fontAlignY=35&fontColor=ffffff&desc=Building%20AI-enabled%20backend%20systems&descAlignY=70&descAlign=50)
+<sub>SCIENTIFIC SOFTWARE · SEOUL</sub>
+
+# CHEMDEV.AI
+
+**Scientific thinking for applied machine learning and data engineering.**
+
+<br>
+
+<a href="https://dukduk12.github.io/">Portfolio</a>
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="https://dukduk12.github.io/posts/">Writing</a>
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="https://medium.com/@sallyinner59">Medium</a>
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="https://github.com/dukduk12?tab=repositories">Projects</a>
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="mailto:sallyinner59@gmail.com">Email</a>
 
 </div>
 
----
-
-## 👀 About Me
-
-- 🧪 Interested in Chemistry, AI, and Backend Engineering  
-- 🔬 Undergraduate researcher in AI drug discovery lab  
-- 🎓 Completed BDA SQL course with honors (7th batch)  
-- 💻 Building backend systems with Spring Boot and microservice architecture  
-- ⚙️ Interested in AI-integrated services, distributed systems, and real-time communication  
-- 📊 Experience with SQL, data analysis, and ML pipelines  
-- 🌱 Participated in Global Challenger vegan cosmetics project in the USA  
+<br>
 
 ---
 
-## 🚀 Key Project
+## Profile
 
-Designed and implemented a Docker-based microservices architecture with API servers, gRPC inference, mediasoup SFU, Redis, and MySQL.  
-Integrated IoT communication, JWT authentication, React Native mobile UI, and real-time monitoring systems.
+I build software where **science, data, and engineering** meet.
 
----
+Chemistry shapes the questions. Data reveals their structure. Machine learning turns observation into a working hypothesis—and engineering makes it useful, reliable, and real.
 
-## 🧱 Tech Stack
+> Current focus: applied machine learning, data pipelines, backend systems, and research-driven products.
 
-### Backend
+<br>
 
-<p>
-  <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=SpringBoot&logoColor=white" />
-  <img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=SpringSecurity&logoColor=white" />
-  <img src="https://img.shields.io/badge/MyBatis-000000?style=flat-square" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=FastAPI&logoColor=white" />
-</p>
+## Current activity
 
-### Frontend & Mobile
+<sub>A LIVE VIEW OF PUBLIC GITHUB CONTRIBUTIONS</sub>
 
-<p>
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black" />
-  <img src="https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=React&logoColor=black" />
-  <img src="https://img.shields.io/badge/Thymeleaf-005F0F?style=flat-square&logo=Thymeleaf&logoColor=white" />
-</p>
+<br>
 
-### Database & Infra
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=dukduk12&theme=github-compact&hide_border=true&area=true&custom_title=Contribution%20Activity">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=dukduk12&theme=minimal&hide_border=true&area=true&custom_title=Contribution%20Activity">
+  <img alt="GitHub contribution activity for dukduk12" src="https://github-readme-activity-graph.vercel.app/graph?username=dukduk12&theme=minimal&hide_border=true&area=true&custom_title=Contribution%20Activity" width="100%">
+</picture>
 
-<p>
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white" />
-  <img src="https://img.shields.io/badge/Oracle_DB-F80000?style=flat-square&logo=Oracle&logoColor=white" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=Redis&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=GitHubActions&logoColor=white" />
-</p>
+<br>
 
-### Communication & Monitoring
+## Languages
 
-<p>
-  <img src="https://img.shields.io/badge/gRPC-4285F4?style=flat-square&logo=Google&logoColor=white" />
-  <img src="https://img.shields.io/badge/WebRTC-333333?style=flat-square" />
-  <img src="https://img.shields.io/badge/mediasoup-000000?style=flat-square" />
-  <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=Grafana&logoColor=white" />
-</p>
+<sub>CALCULATED AUTOMATICALLY FROM PUBLIC REPOSITORIES</sub>
 
-### AI / Data
+<br>
 
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=PyTorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" />
-  <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=MLflow&logoColor=white" />
-</p>
+<a href="https://github.com/dukduk12?tab=repositories">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=dukduk12&layout=compact&langs_count=6&hide_border=true&theme=transparent&title_color=F0F0F0&text_color=A8A8A8">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=dukduk12&layout=compact&langs_count=6&hide_border=true&theme=transparent&title_color=242424&text_color=666666">
+    <img alt="Languages used across dukduk12 repositories" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dukduk12&layout=compact&langs_count=6&hide_border=true&theme=transparent" width="440">
+  </picture>
+</a>
+
+<br>
+
+## Technology
+
+<sub>A SMALL, PRACTICAL TOOLSET</sub>
+
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=java,spring,python,pytorch,fastapi,mysql,redis,docker,react,githubactions&perline=10&theme=dark">
+  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=java,spring,python,pytorch,fastapi,mysql,redis,docker,react,githubactions&perline=10&theme=light">
+  <img src="https://skillicons.dev/icons?i=java,spring,python,pytorch,fastapi,mysql,redis,docker,react,githubactions&perline=10&theme=light" alt="Java, Spring, Python, PyTorch, FastAPI, MySQL, Redis, Docker, React, and GitHub Actions">
+</picture>
+
+<br>
 
 ---
 
-## 🌱 Currently Exploring
+## Latest writing
 
-- Spring Boot Architecture
-- Transaction & Concurrency Control
-- Distributed Systems & MSA
-- AI-integrated Backend Services
-- Docker & DevOps Workflows
+New notes are added automatically from the two public publishing channels.
+
+### From the journal
+
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
+
+<sub><a href="https://dukduk12.github.io/posts/">Browse all journal posts →</a></sub>
+
+<br>
+
+### From Medium
+
+<!-- MEDIUM-POST-LIST:START -->
+<!-- MEDIUM-POST-LIST:END -->
+
+<sub><a href="https://medium.com/@sallyinner59">Browse all Medium posts →</a></sub>
+
+<br>
 
 ---
 
-## 📈 GitHub Stats
+## GitHub overview
+
+<sub>PUBLIC WORK, MEASURED OVER TIME</sub>
+
+<br>
 
 <div align="center">
 
-<img height="170em" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=dukduk12&theme=github" />
-<img height="170em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=dukduk12&theme=github" />
+<a href="https://github.com/dukduk12">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=dukduk12&show_icons=true&hide_border=true&include_all_commits=true&theme=transparent&title_color=F0F0F0&text_color=A8A8A8&icon_color=A8A8A8">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=dukduk12&show_icons=true&hide_border=true&include_all_commits=true&theme=transparent&title_color=242424&text_color=666666&icon_color=777777">
+    <img alt="GitHub statistics for dukduk12" src="https://github-readme-stats.vercel.app/api?username=dukduk12&show_icons=true&hide_border=true&include_all_commits=true&theme=transparent" height="170">
+  </picture>
+</a>
+&nbsp;
+<a href="https://github.com/dukduk12">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=dukduk12&theme=transparent&hide_border=true&ring=A8A8A8&fire=A8A8A8&currStreakLabel=A8A8A8&sideLabels=A8A8A8&dates=777777">
+    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=dukduk12&theme=transparent&hide_border=true&ring=666666&fire=666666&currStreakLabel=666666&sideLabels=666666&dates=999999">
+    <img alt="Contribution streak for dukduk12" src="https://streak-stats.demolab.com?user=dukduk12&theme=transparent&hide_border=true" height="170">
+  </picture>
+</a>
 
 </div>
 
+<br>
+
 ---
 
 <div align="center">
 
-### 💡 Backend × AI Integration × Real-world Services
+<sub>CHEMDEV.AI · QUESTIONS INTO SYSTEMS</sub>
+
+<br><br>
+
+<a href="mailto:sallyinner59@gmail.com">Start a conversation</a>
 
 </div>

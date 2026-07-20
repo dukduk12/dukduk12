@@ -1,0 +1,40 @@
+name: Update latest writing
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-profile-writing
+  cancel-in-progress: true
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Update journal entries
+        uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          comment_tag_name: BLOG-POST-LIST
+          feed_list: https://dukduk12.github.io/feed.xml
+          max_post_count: 3
+          date_format: mmm d, yyyy
+          template: "$newline- [$title]($url) · <sub>$date</sub>"
+          commit_message: "content: refresh latest journal entries"
+
+      - name: Update Medium entries
+        uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          comment_tag_name: MEDIUM-POST-LIST
+          feed_list: https://medium.com/feed/@sallyinner59
+          max_post_count: 3
+          date_format: mmm d, yyyy
+          template: "$newline- [$title]($url) · <sub>$date</sub>"
+          commit_message: "content: refresh latest Medium entries"
