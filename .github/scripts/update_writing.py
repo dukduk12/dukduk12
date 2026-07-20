@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import html
+import json
+import os
 import re
 import sys
 import urllib.request
@@ -16,7 +18,9 @@ README = Path("README.md")
 BLOG_URL = "https://dukduk12.github.io/posts/"
 MEDIUM_FEED = "https://medium.com/feed/@sallyinner59"
 USER_AGENT = "dukduk12-profile-readme/1.0"
-MAX_POSTS = 3
+MAX_POSTS = 2
+GITHUB_USER = "dukduk12"
+MAX_LANGUAGES = 6
 
 
 @dataclass(frozen=True)
@@ -27,7 +31,15 @@ class Post:
 
 
 def fetch(url: str) -> bytes:
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": USER_AGENT,
+    }
+    token = os.environ.get("GITHUB_TOKEN")
+    if token and "api.github.com" in url:
+        headers["Authorization"] = f"Bearer {token}"
+        headers["X-GitHub-Api-Version"] = "2022-11-28"
+    request = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(request, timeout=30) as response:
         return response.read()
 
@@ -87,13 +99,60 @@ def medium_posts() -> list[Post]:
     return posts
 
 
-def markdown(posts: list[Post]) -> str:
+def language_stats() -> list[tuple[str, float]]:
+    repositories = json.loads(
+        fetch(
+            f"https://api.github.com/users/{GITHUB_USER}/repos"
+            "?type=owner&per_page=100&sort=updated"
+        )
+    )
+    totals: dict[str, int] = {}
+    for repository in repositories:
+        if repository.get("fork") or repository.get("private"):
+            continue
+        languages = json.loads(fetch(repository["languages_url"]))
+        for language, byte_count in languages.items():
+            totals[language] = totals.get(language, 0) + int(byte_count)
+
+    total_bytes = sum(totals.values())
+    if not total_bytes:
+        raise RuntimeError("No public repository language data found")
+
+    ranked = sorted(totals.items(), key=lambda item: item[1], reverse=True)
+    return [
+        (language, byte_count / total_bytes * 100)
+        for language, byte_count in ranked[:MAX_LANGUAGES]
+    ]
+
+
+def render_posts(posts: list[Post]) -> str:
     lines = []
     for post in posts:
-        title = re.sub(r"([\\[\]])", r"\\\1", post.title)
-        suffix = f" · <sub>{post.date}</sub>" if post.date else ""
-        lines.append(f"- [{title}]({post.url}){suffix}")
+        clean_title = post.title.replace("[검토중|", "[")
+        title = html.escape(clean_title)
+        url = html.escape(post.url, quote=True)
+        date = f"<br><sub>{html.escape(post.date)}</sub>" if post.date else ""
+        lines.append(f'<p><a href="{url}"><strong>{title}</strong></a>{date}</p>')
     return "\n".join(lines)
+
+
+def render_languages(languages: list[tuple[str, float]]) -> str:
+    rows = [
+        "<table>",
+        "  <tr><th align=\"left\">Language</th><th align=\"left\">Share</th><th align=\"right\">%</th></tr>",
+    ]
+    for language, percentage in languages:
+        filled = max(1, round(percentage / 5))
+        bar = "■" * filled + "□" * (20 - filled)
+        rows.append(
+            "  <tr>"
+            f"<td><strong>{html.escape(language)}</strong></td>"
+            f"<td><code>{bar}</code></td>"
+            f"<td align=\"right\"><strong>{percentage:.1f}%</strong></td>"
+            "</tr>"
+        )
+    rows.append("</table>")
+    return "\n".join(rows)
 
 
 def replace_block(document: str, tag: str, content: str) -> str:
@@ -114,13 +173,19 @@ def main() -> int:
     for tag, loader in (
         ("BLOG-POST-LIST", blog_posts),
         ("MEDIUM-POST-LIST", medium_posts),
+        ("LANGUAGE-STATS", language_stats),
     ):
         try:
-            document = replace_block(document, tag, markdown(loader()))
+            content = (
+                render_languages(loader())
+                if tag == "LANGUAGE-STATS"
+                else render_posts(loader())
+            )
+            document = replace_block(document, tag, content)
         except Exception as error:
             errors.append(f"{tag}: {error}")
 
-    if len(errors) == 2:
+    if len(errors) == 3:
         print("\n".join(errors), file=sys.stderr)
         return 1
 
