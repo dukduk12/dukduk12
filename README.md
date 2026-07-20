@@ -10,7 +10,7 @@
 
 <br><br>
 
-`toxicity prediction` · `scientific data` · `production systems`
+`toxicity prediction` · `cheminformatics` · `production systems`
 
 </div>
 
