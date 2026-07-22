@@ -68,8 +68,8 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 ### Blog
 
 <!-- BLOG-POST-LIST:START -->
-<a href="https://dukduk12.github.io/drug-discovery/ai-accelerated-drug-discovery/"><img src="https://dukduk12.github.io/assets/images/drug-discovery/protein-ligand-interactions.svg" alt="[AI Drug Discovery] From Protein–Ligand Binding to CADD, Virtual Screening, and Regulation" width="720"></a>
-<p><a href="https://dukduk12.github.io/drug-discovery/ai-accelerated-drug-discovery/"><strong>[AI Drug Discovery] From Protein–Ligand Binding to CADD, Virtual Screening, and Regulation</strong></a></p>
+<a href="https://dukduk12.github.io/drug-discovery/twelve-drugs-that-changed-humanity/"><img src="https://dukduk12.github.io/assets/images/drugs-that-changed-humanity/penicillin-g.png" alt="[History of Medicines] Twelve Ways Drugs Changed Humanity" width="720"></a>
+<p><a href="https://dukduk12.github.io/drug-discovery/twelve-drugs-that-changed-humanity/"><strong>[History of Medicines] Twelve Ways Drugs Changed Humanity</strong></a></p>
 <!-- BLOG-POST-LIST:END -->
 
 <sub><a href="https://dukduk12.github.io/posts/">VIEW ALL POSTS →</a></sub>
@@ -106,7 +106,7 @@ Python              ■■■■□□□□□□□□□□□□□□□□
 JavaScript          ■□□□□□□□□□□□□□□□□□□□    7.4%
 SCSS                ■□□□□□□□□□□□□□□□□□□□    4.4%
 Java                ■□□□□□□□□□□□□□□□□□□□    2.3%
-HTML                ■□□□□□□□□□□□□□□□□□□□    1.4%
+HTML                ■□□□□□□□□□□□□□□□□□□□    1.5%
 </pre>
 <!-- LANGUAGE-STATS:END -->
 
