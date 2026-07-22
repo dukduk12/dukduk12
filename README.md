@@ -68,8 +68,7 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 ### Blog
 
 <!-- BLOG-POST-LIST:START -->
-<a href="https://dukduk12.github.io/drug-discovery/twelve-drugs-that-changed-humanity/"><img src="https://dukduk12.github.io/assets/images/drugs-that-changed-humanity/penicillin-g.png" alt="[History of Medicines] Twelve Ways Drugs Changed Humanity" width="720"></a>
-<p><a href="https://dukduk12.github.io/drug-discovery/twelve-drugs-that-changed-humanity/"><strong>[History of Medicines] Twelve Ways Drugs Changed Humanity</strong></a></p>
+<p><a href="https://dukduk12.github.io/java/java/"><strong>[Java] Java Cheat Sheet: From Fundamentals to the JVM</strong></a></p>
 <!-- BLOG-POST-LIST:END -->
 
 <sub><a href="https://dukduk12.github.io/posts/">VIEW ALL POSTS →</a></sub>
