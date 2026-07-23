@@ -68,7 +68,7 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 ### Blog
 
 <!-- BLOG-POST-LIST:START -->
-<p><a href="https://dukduk12.github.io/java/java/"><strong>[Java] Java Cheat Sheet: From Fundamentals to the JVM</strong></a></p>
+<p><a href="https://dukduk12.github.io/cheminformatics/rdkit-cheatsheet/"><strong>[Cheminformatics] RDKit Cheat Sheet: From SMILES and InChI to 3D, Descriptors, and Reactions</strong></a></p>
 <!-- BLOG-POST-LIST:END -->
 
 <sub><a href="https://dukduk12.github.io/posts/">VIEW ALL POSTS →</a></sub>
