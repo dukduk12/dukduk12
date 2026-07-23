@@ -24,7 +24,7 @@ jobs:
       - name: Generate GitHub overview
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
           THEME: nord_dark
@@ -32,7 +32,7 @@ jobs:
 
       - name: Fetch latest writing
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: python .github/scripts/update_writing.py
 
       - name: Commit updated entries
