@@ -7,7 +7,9 @@ on:
 
 permissions:
   contents: write
-
+  statuses: read
+  checks: read
+  
 concurrency:
   group: update-profile-writing
   cancel-in-progress: true
