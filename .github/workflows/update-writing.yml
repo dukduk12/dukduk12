@@ -1,19 +1,16 @@
 name: Update latest writing
-
 on:
   schedule:
     - cron: "17 */6 * * *"
   workflow_dispatch:
-
 permissions:
   contents: write
   statuses: read
   checks: read
-  
+
 concurrency:
   group: update-profile-writing
   cancel-in-progress: true
-
 jobs:
   update-readme:
     runs-on: ubuntu-latest
@@ -45,4 +42,5 @@ jobs:
             exit 0
           fi
           git commit -m "content: refresh latest writing"
+          git pull --rebase origin main
           git push
