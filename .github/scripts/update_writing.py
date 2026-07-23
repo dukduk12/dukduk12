@@ -173,14 +173,85 @@ def render_posts(posts: list[Post]) -> str:
     return "\n".join(lines)
 
 
+def generate_language_svg(languages: list[tuple[str, float]]) -> str:
+    width = 600
+    padding = 25
+    bar_y = 55
+    bar_height = 10
+    legend_y_start = 95
+    col_width = 270
+    row_height = 25
+    
+    num_langs = len(languages)
+    num_rows = (num_langs + 2 - 1) // 2
+    height = legend_y_start + num_rows * row_height + padding - 5
+    
+    color_map = {
+        "Jupyter Notebook": "#DA5B0B",
+        "Python": "#3572A5",
+        "JavaScript": "#f1e05a",
+        "TypeScript": "#3178c6",
+        "SCSS": "#c6538c",
+        "CSS": "#563d7c",
+        "HTML": "#e34c26",
+        "Java": "#b07219",
+        "Shell": "#89e051",
+    }
+    default_color = "#858585"
+    
+    svg = []
+    svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" fill="none">')
+    svg.append(f'  <rect x="0.5" y="0.5" width="{width-1}" height="{height-1}" rx="4.5" fill="#2e3440" stroke="#3b4252"/>')
+    svg.append('  <text x="25" y="35" font-family="-apple-system,BlinkMacSystemFont,\'Segoe UI\',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#88c0d0">Most Used Languages</text>')
+    
+    bar_width = width - (padding * 2)
+    current_x = padding
+    
+    bar_segments = []
+    legend_items = []
+    
+    total_percentage = sum(p for _, p in languages)
+    
+    for index, (lang, pct) in enumerate(languages):
+        color = color_map.get(lang, default_color)
+        seg_w = (pct / 100.0) * bar_width if total_percentage > 0 else 0
+        if seg_w > 0:
+            bar_segments.append((current_x, seg_w, color))
+            current_x += seg_w
+        
+        col = index % 2
+        row = index // 2
+        lx = padding + col * col_width
+        ly = legend_y_start + row * row_height
+        legend_items.append((lx, ly, lang, pct, color))
+        
+    svg.append('  <defs>')
+    svg.append('    <clipPath id="bar-clip">')
+    svg.append(f'      <rect x="{padding}" y="{bar_y}" width="{bar_width}" height="{bar_height}" rx="5" />')
+    svg.append('    </clipPath>')
+    svg.append('  </defs>')
+    
+    svg.append('  <g clip-path="url(#bar-clip)">')
+    for x, w, color in bar_segments:
+        svg.append(f'    <rect x="{x}" y="{bar_y}" width="{w}" height="{bar_height}" fill="{color}" />')
+    svg.append('  </g>')
+    
+    for lx, ly, lang, pct, color in legend_items:
+        svg.append(f'  <circle cx="{lx+5}" cy="{ly-4}" r="5" fill="{color}" />')
+        svg.append(f'  <text x="{lx+18}" y="{ly}" font-family="-apple-system,BlinkMacSystemFont,\'Segoe UI\',Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="#d8dee9">{lang}</text>')
+        svg.append(f'  <text x="{lx+180}" y="{ly}" font-family="-apple-system,BlinkMacSystemFont,\'Segoe UI\',Helvetica,Arial,sans-serif" font-size="12" fill="#81a1c1">{pct:.1f}%</text>')
+        
+    svg.append('</svg>')
+    return "\n".join(svg)
+
+
 def render_languages(languages: list[tuple[str, float]]) -> str:
-    rows = ["<pre>"]
-    for language, percentage in languages:
-        filled = max(1, round(percentage / 5))
-        bar = "■" * filled + "□" * (20 - filled)
-        rows.append(f"{language[:18]:<18}  {bar}  {percentage:>5.1f}%")
-    rows.append("</pre>")
-    return "\n".join(rows)
+    svg_content = generate_language_svg(languages)
+    svg_path = Path("assets/languages.svg")
+    svg_path.parent.mkdir(parents=True, exist_ok=True)
+    svg_path.write_text(svg_content, encoding="utf-8")
+    
+    return f'<p align="center">\n  <img src="./assets/languages.svg" alt="Languages Overview" width="600">\n</p>'
 
 
 def replace_block(document: str, tag: str, content: str) -> str:
