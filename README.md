@@ -125,11 +125,11 @@ HTML                ■□□□□□□□□□□□□□□□□□□□
 
 <!-- GITHUB-OVERVIEW:START -->
 <pre>
-Days on GitHub      ····················       0
-Commits This Year   ····················       0
-Current Streak      ■■■■■□□□□□□□□□□□□□□□    0 days
-Longest Streak      ■■■■■■■■■■■■■■■■■■■■    0 days
-Public Repos        ····················       0
+Days on GitHub      ····················     422
+Commits This Year   ····················     166
+Current Streak      ■■■■■■■■■■■■■■■■■■■■   20 days
+Longest Streak      ■■■■■■■■■■■■■■■■■■■■   20 days
+Public Repos        ····················      27
 Private Repos       ····················       0
 </pre>
 <!-- GITHUB-OVERVIEW:END -->
