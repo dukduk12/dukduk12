@@ -45,7 +45,7 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 
 ## Technical Stack
 
-<img src="https://skillicons.dev/icons?i=python,pytorch,sklearn,fastapi,mysql,docker,githubactions&amp;perline=7&amp;theme=dark" alt="Python, PyTorch, scikit-learn, FastAPI, MySQL, Docker, and GitHub Actions" width="390">
+<img src="https://skillicons.dev/icons?i=python,pytorch,sklearn,fastapi,mysql,docker,githubactions&amp;perline=7&amp;theme=light" alt="Python, PyTorch, scikit-learn, FastAPI, MySQL, Docker, and GitHub Actions" width="390">
 
 <br>
 
@@ -99,9 +99,14 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 <br>
 
 <!-- LANGUAGE-STATS:START -->
-<p align="center">
-  <img src="./assets/languages.svg" alt="Languages Overview" width="600">
-</p>
+<pre>
+Jupyter Notebook    ■■■■■■■■■■■■■□□□□□□□   63.0%
+Python              ■■■■□□□□□□□□□□□□□□□□   21.1%
+JavaScript          ■□□□□□□□□□□□□□□□□□□□    7.4%
+SCSS                ■□□□□□□□□□□□□□□□□□□□    4.4%
+Java                ■□□□□□□□□□□□□□□□□□□□    2.3%
+HTML                ■□□□□□□□□□□□□□□□□□□□    1.5%
+</pre>
 <!-- LANGUAGE-STATS:END -->
 
 </div>
@@ -114,19 +119,20 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 
 ## GitHub Overview
 
-<sub>DYNAMICALLY UPDATED REAL-TIME STATS</sub>
+<sub>GENERATED FROM GITHUB API · UPDATED EVERY 6 HOURS</sub>
 
-<br><br>
+<br>
 
-<!-- Stats & Streak Row -->
-<p align="center">
-  <a href="https://github.com/dukduk12">
-    <img src="https://github-readme-stats.vercel.app/api?username=dukduk12&show_icons=true&theme=nord&background=2e3440&border=3b4252&title_color=88c0d0&text_color=d8dee9&icon_color=81a1c1&count_private=true&border_radius=4.5" alt="dukduk12's GitHub Stats" width="48%">
-  </a>
-  <a href="https://github.com/dukduk12">
-    <img src="https://streak-stats.demolab.com?user=dukduk12&theme=nord&background=2e3440&border=3b4252&stroke=3b4252&ring=88c0d0&fire=bf616a&currStreakNum=d8dee9&sideNums=d8dee9&currStreakLabel=88c0d0&sideLabels=81a1c1&dates=4c566a&border_radius=4.5" alt="dukduk12's Commit Streak" width="48%">
-  </a>
-</p>
+<!-- GITHUB-OVERVIEW:START -->
+<pre>
+Days on GitHub      ····················       0
+Commits This Year   ····················       0
+Current Streak      ■■■■■□□□□□□□□□□□□□□□    0 days
+Longest Streak      ■■■■■■■■■■■■■■■■■■■■    0 days
+Public Repos        ····················       0
+Private Repos       ····················       0
+</pre>
+<!-- GITHUB-OVERVIEW:END -->
 
 </div>
 

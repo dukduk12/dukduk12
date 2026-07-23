@@ -8,6 +8,7 @@ import sys
 import urllib.request
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
 from pathlib import Path
@@ -173,85 +174,127 @@ def render_posts(posts: list[Post]) -> str:
     return "\n".join(lines)
 
 
-def generate_language_svg(languages: list[tuple[str, float]]) -> str:
-    width = 600
-    padding = 25
-    bar_y = 55
-    bar_height = 10
-    legend_y_start = 95
-    col_width = 270
-    row_height = 25
-    
-    num_langs = len(languages)
-    num_rows = (num_langs + 2 - 1) // 2
-    height = legend_y_start + num_rows * row_height + padding - 5
-    
-    color_map = {
-        "Jupyter Notebook": "#DA5B0B",
-        "Python": "#3572A5",
-        "JavaScript": "#f1e05a",
-        "TypeScript": "#3178c6",
-        "SCSS": "#c6538c",
-        "CSS": "#563d7c",
-        "HTML": "#e34c26",
-        "Java": "#b07219",
-        "Shell": "#89e051",
-    }
-    default_color = "#858585"
-    
-    svg = []
-    svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" fill="none">')
-    svg.append(f'  <rect x="0.5" y="0.5" width="{width-1}" height="{height-1}" rx="4.5" fill="#2e3440" stroke="#3b4252"/>')
-    svg.append('  <text x="25" y="35" font-family="-apple-system,BlinkMacSystemFont,\'Segoe UI\',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#88c0d0">Most Used Languages</text>')
-    
-    bar_width = width - (padding * 2)
-    current_x = padding
-    
-    bar_segments = []
-    legend_items = []
-    
-    total_percentage = sum(p for _, p in languages)
-    
-    for index, (lang, pct) in enumerate(languages):
-        color = color_map.get(lang, default_color)
-        seg_w = (pct / 100.0) * bar_width if total_percentage > 0 else 0
-        if seg_w > 0:
-            bar_segments.append((current_x, seg_w, color))
-            current_x += seg_w
-        
-        col = index % 2
-        row = index // 2
-        lx = padding + col * col_width
-        ly = legend_y_start + row * row_height
-        legend_items.append((lx, ly, lang, pct, color))
-        
-    svg.append('  <defs>')
-    svg.append('    <clipPath id="bar-clip">')
-    svg.append(f'      <rect x="{padding}" y="{bar_y}" width="{bar_width}" height="{bar_height}" rx="5" />')
-    svg.append('    </clipPath>')
-    svg.append('  </defs>')
-    
-    svg.append('  <g clip-path="url(#bar-clip)">')
-    for x, w, color in bar_segments:
-        svg.append(f'    <rect x="{x}" y="{bar_y}" width="{w}" height="{bar_height}" fill="{color}" />')
-    svg.append('  </g>')
-    
-    for lx, ly, lang, pct, color in legend_items:
-        svg.append(f'  <circle cx="{lx+5}" cy="{ly-4}" r="5" fill="{color}" />')
-        svg.append(f'  <text x="{lx+18}" y="{ly}" font-family="-apple-system,BlinkMacSystemFont,\'Segoe UI\',Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="#d8dee9">{lang}</text>')
-        svg.append(f'  <text x="{lx+180}" y="{ly}" font-family="-apple-system,BlinkMacSystemFont,\'Segoe UI\',Helvetica,Arial,sans-serif" font-size="12" fill="#81a1c1">{pct:.1f}%</text>')
-        
-    svg.append('</svg>')
-    return "\n".join(svg)
-
-
 def render_languages(languages: list[tuple[str, float]]) -> str:
-    svg_content = generate_language_svg(languages)
-    svg_path = Path("assets/languages.svg")
-    svg_path.parent.mkdir(parents=True, exist_ok=True)
-    svg_path.write_text(svg_content, encoding="utf-8")
-    
-    return f'<p align="center">\n  <img src="./assets/languages.svg" alt="Languages Overview" width="600">\n</p>'
+    rows = ["<pre>"]
+    for language, percentage in languages:
+        filled = max(1, round(percentage / 5))
+        bar = "■" * filled + "□" * (20 - filled)
+        rows.append(f"{language[:18]:<18}  {bar}  {percentage:>5.1f}%")
+    rows.append("</pre>")
+    return "\n".join(rows)
+
+
+def github_stats() -> dict:
+    """Fetch contribution streak and profile stats via GitHub GraphQL API."""
+    query = """
+    query($login: String!) {
+      user(login: $login) {
+        createdAt
+        contributionsCollection {
+          totalCommitContributions
+          contributionCalendar {
+            weeks {
+              contributionDays {
+                contributionCount
+                date
+              }
+            }
+          }
+        }
+        repositories(ownerAffiliations: OWNER, privacy: PUBLIC) {
+          totalCount
+        }
+        privateRepos: repositories(ownerAffiliations: OWNER, privacy: PRIVATE) {
+          totalCount
+        }
+      }
+    }
+    """
+    payload = json.dumps({"query": query, "variables": {"login": GITHUB_USER}}).encode()
+    headers = {
+        "Content-Type": "application/json",
+        "Accept": "application/vnd.github+json",
+        "User-Agent": USER_AGENT,
+    }
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+        headers["X-GitHub-Api-Version"] = "2022-11-28"
+    request = urllib.request.Request(
+        "https://api.github.com/graphql",
+        data=payload,
+        headers=headers,
+        method="POST",
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        data = json.loads(response.read())
+
+    user = data["data"]["user"]
+    col = user["contributionsCollection"]
+    calendar = col["contributionCalendar"]
+
+    # Days since account creation
+    created = datetime.fromisoformat(user["createdAt"].replace("Z", "+00:00"))
+    days_on_github = (datetime.now(timezone.utc) - created).days
+
+    # Flatten all days into a date -> count map
+    all_days: dict[str, int] = {}
+    for week in calendar["weeks"]:
+        for day in week["contributionDays"]:
+            all_days[day["date"]] = day["contributionCount"]
+
+    # Calculate current streak
+    today = datetime.now(timezone.utc).date()
+    check = today if all_days.get(str(today), 0) > 0 else today - timedelta(days=1)
+    current_streak = 0
+    while all_days.get(str(check), 0) > 0:
+        current_streak += 1
+        check -= timedelta(days=1)
+
+    # Calculate longest streak
+    longest_streak = temp = 0
+    for d in sorted(all_days):
+        if all_days[d] > 0:
+            temp += 1
+            longest_streak = max(longest_streak, temp)
+        else:
+            temp = 0
+
+    return {
+        "days_on_github": days_on_github,
+        "commits": col["totalCommitContributions"],
+        "current": current_streak,
+        "longest": longest_streak,
+        "repos": user["repositories"]["totalCount"],
+        "private_repos": user["privateRepos"]["totalCount"],
+    }
+
+
+def render_overview(stats: dict) -> str:
+    days = stats["days_on_github"]
+    commits = stats["commits"]
+    cur = stats["current"]
+    lng = stats["longest"]
+    rep = stats["repos"]
+    prv = stats["private_repos"]
+
+    max_streak = max(lng, 1)
+    BAR = 20
+    dot = "\u00b7"
+
+    def streak_bar(val: int) -> str:
+        filled = max(1, round(val / max_streak * BAR)) if val > 0 else 0
+        return "\u25a0" * filled + "\u25a1" * (BAR - filled)
+
+    rows = ["<pre>"]
+    rows.append(f"{'Days on GitHub':<18}  {dot * BAR}  {days:>6,}")
+    rows.append(f"{'Commits This Year':<18}  {dot * BAR}  {commits:>6,}")
+    rows.append(f"{'Current Streak':<18}  {streak_bar(cur)}  {cur:>3} days")
+    rows.append(f"{'Longest Streak':<18}  {streak_bar(lng)}  {lng:>3} days")
+    rows.append(f"{'Public Repos':<18}  {dot * BAR}  {rep:>6}")
+    rows.append(f"{'Private Repos':<18}  {dot * BAR}  {prv:>6}")
+    rows.append("</pre>")
+    return "\n".join(rows)
 
 
 def replace_block(document: str, tag: str, content: str) -> str:
@@ -273,18 +316,20 @@ def main() -> int:
         ("BLOG-POST-LIST", blog_posts),
         ("MEDIUM-POST-LIST", medium_posts),
         ("LANGUAGE-STATS", language_stats),
+        ("GITHUB-OVERVIEW", github_stats),
     ):
         try:
-            content = (
-                render_languages(loader())
-                if tag == "LANGUAGE-STATS"
-                else render_posts(loader())
-            )
+            if tag == "LANGUAGE-STATS":
+                content = render_languages(loader())
+            elif tag == "GITHUB-OVERVIEW":
+                content = render_overview(loader())
+            else:
+                content = render_posts(loader())
             document = replace_block(document, tag, content)
         except Exception as error:
             errors.append(f"{tag}: {error}")
 
-    if len(errors) == 3:
+    if len(errors) == 4:
         print("\n".join(errors), file=sys.stderr)
         return 1
 
