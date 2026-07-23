@@ -1,8 +1,10 @@
 name: Update latest writing
+
 on:
   schedule:
     - cron: "17 */6 * * *"
   workflow_dispatch:
+
 permissions:
   contents: write
   statuses: read
@@ -11,27 +13,37 @@ permissions:
 concurrency:
   group: update-profile-writing
   cancel-in-progress: true
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out profile repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Fetch latest writing
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOEKN }}
         run: python .github/scripts/update_writing.py
 
       - name: Commit updated entries
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add README.md
+
           if git diff --staged --quiet; then
             echo "Profile content is already current."
             exit 0
           fi
+
           git commit -m "content: refresh latest writing"
-          git pull --rebase origin main
+
+          git fetch origin
+          git rebase origin/main
+
           git push
