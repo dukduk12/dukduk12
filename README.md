@@ -68,7 +68,7 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 ### Blog
 
 <!-- BLOG-POST-LIST:START -->
-<p><a href="https://dukduk12.github.io/cheminformatics/rdkit-cheatsheet/"><strong>[Cheminformatics] RDKit Cheat Sheet: From SMILES and InChI to 3D, Descriptors, and Reactions</strong></a></p>
+<p><a href="https://dukduk12.github.io/frontend/css-cheatsheet/"><strong>[Frontend] CSS Cheat Sheet: Selectors, Layout, States, and Responsive Design</strong></a></p>
 <!-- BLOG-POST-LIST:END -->
 
 <sub><a href="https://dukduk12.github.io/posts/">VIEW ALL POSTS →</a></sub>
@@ -100,10 +100,10 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 
 <!-- LANGUAGE-STATS:START -->
 <pre>
-Jupyter Notebook    ■■■■■■■■■■■■■□□□□□□□   63.0%
-Python              ■■■■□□□□□□□□□□□□□□□□   21.1%
-JavaScript          ■□□□□□□□□□□□□□□□□□□□    7.4%
-SCSS                ■□□□□□□□□□□□□□□□□□□□    4.4%
+Jupyter Notebook    ■■■■■■■■■■■■■□□□□□□□   62.8%
+Python              ■■■■□□□□□□□□□□□□□□□□   21.0%
+JavaScript          ■□□□□□□□□□□□□□□□□□□□    7.3%
+SCSS                ■□□□□□□□□□□□□□□□□□□□    4.6%
 Java                ■□□□□□□□□□□□□□□□□□□□    2.3%
 HTML                ■□□□□□□□□□□□□□□□□□□□    1.5%
 </pre>
@@ -126,9 +126,9 @@ HTML                ■□□□□□□□□□□□□□□□□□□□
 <!-- GITHUB-OVERVIEW:START -->
 <pre>
 Days on GitHub      ····················     423
-Commits This Year   ····················     257
-Current Streak      ■■■■■■■■■■■■■■■■■■■■   21 days
-Longest Streak      ■■■■■■■■■■■■■■■■■■■■   21 days
+Commits This Year   ····················     259
+Current Streak      ■■■■■■■■■■■■■■■■■■■■   22 days
+Longest Streak      ■■■■■■■■■■■■■■■■■■■■   22 days
 Public Repos        ····················      27
 Private Repos       ····················      12
 </pre>
