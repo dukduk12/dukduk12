@@ -100,12 +100,12 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 
 <!-- LANGUAGE-STATS:START -->
 <pre>
-Jupyter Notebook    ■■■■■■■■■■■■■□□□□□□□   62.8%
-Python              ■■■■□□□□□□□□□□□□□□□□   21.0%
-JavaScript          ■□□□□□□□□□□□□□□□□□□□    7.3%
-SCSS                ■□□□□□□□□□□□□□□□□□□□    4.6%
+Jupyter Notebook    ■■■■■■■■■■■■□□□□□□□□   62.4%
+Python              ■■■■□□□□□□□□□□□□□□□□   20.9%
+JavaScript          ■□□□□□□□□□□□□□□□□□□□    7.4%
+SCSS                ■□□□□□□□□□□□□□□□□□□□    4.9%
 Java                ■□□□□□□□□□□□□□□□□□□□    2.3%
-HTML                ■□□□□□□□□□□□□□□□□□□□    1.5%
+HTML                ■□□□□□□□□□□□□□□□□□□□    1.7%
 </pre>
 <!-- LANGUAGE-STATS:END -->
 
@@ -126,11 +126,11 @@ HTML                ■□□□□□□□□□□□□□□□□□□□
 <!-- GITHUB-OVERVIEW:START -->
 <pre>
 Days on GitHub      ····················     425
-Commits This Year   ····················     261
+Commits This Year   ····················     263
 Current Streak      ■■■■■■■■■■■■■■■■■■■■   23 days
 Longest Streak      ■■■■■■■■■■■■■■■■■■■■   23 days
 Public Repos        ····················      27
-Private Repos       ····················      12
+Private Repos       ····················      13
 </pre>
 <!-- GITHUB-OVERVIEW:END -->
 
