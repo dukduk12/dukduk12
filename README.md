@@ -68,7 +68,7 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 ### Blog
 
 <!-- BLOG-POST-LIST:START -->
-<p><a href="https://dukduk12.github.io/backend/api-design-cheatsheet/"><strong>[Backend] API Design : REST, HTTP, Errors, Pagination, and Operations</strong></a></p>
+<p><a href="https://dukduk12.github.io/python/python-cheatsheet/"><strong>[Python] Python Syntax Cheat Sheet: From Fundamentals to OOP and the GIL</strong></a></p>
 <!-- BLOG-POST-LIST:END -->
 
 <sub><a href="https://dukduk12.github.io/posts/">VIEW ALL POSTS →</a></sub>
@@ -126,7 +126,7 @@ HTML                ■□□□□□□□□□□□□□□□□□□□
 <!-- GITHUB-OVERVIEW:START -->
 <pre>
 Days on GitHub      ····················     428
-Commits This Year   ····················     290
+Commits This Year   ····················     293
 Current Streak      ■■■■■■■■■■■■■■■■■■■■   26 days
 Longest Streak      ■■■■■■■■■■■■■■■■■■■■   26 days
 Public Repos        ····················      26
