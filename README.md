@@ -68,8 +68,8 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 ### Blog
 
 <!-- BLOG-POST-LIST:START -->
-<a href="https://dukduk12.github.io/python/python-performance-core/"><img src="https://dukduk12.github.io/assets/images/python-performance-core/pypi-parallelism-landscape.jpg" alt="[Python] Python Performance from the Core: CPython, GIL, Workers, Wheels, Cython, NumPy, and BLAS" width="720"></a>
-<p><a href="https://dukduk12.github.io/python/python-performance-core/"><strong>[Python] Python Performance from the Core: CPython, GIL, Workers, Wheels, Cython, NumPy, and BLAS</strong></a></p>
+<a href="https://dukduk12.github.io/python/data-file-format-benchmark/"><img src="https://dukduk12.github.io/assets/images/python-data-formats/file-size-1m.svg" alt="[Python] CSV, JSON, Parquet, and Beyond: A Measured Guide to Data File Formats" width="720"></a>
+<p><a href="https://dukduk12.github.io/python/data-file-format-benchmark/"><strong>[Python] CSV, JSON, Parquet, and Beyond: A Measured Guide to Data File Formats</strong></a></p>
 <!-- BLOG-POST-LIST:END -->
 
 <sub><a href="https://dukduk12.github.io/posts/">VIEW ALL POSTS →</a></sub>
@@ -127,9 +127,9 @@ HTML                ■□□□□□□□□□□□□□□□□□□□
 <!-- GITHUB-OVERVIEW:START -->
 <pre>
 Days on GitHub      ····················     435
-Commits This Year   ····················     337
-Current Streak      ■■■■■■■■■■■■■■■■■■■■   33 days
-Longest Streak      ■■■■■■■■■■■■■■■■■■■■   33 days
+Commits This Year   ····················     338
+Current Streak      ■■■■■■■■■■■■■■■■■■■□   33 days
+Longest Streak      ■■■■■■■■■■■■■■■■■■■■   34 days
 Public Repos        ····················      26
 Private Repos       ····················      13
 </pre>
