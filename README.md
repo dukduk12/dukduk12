@@ -68,8 +68,8 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 ### Blog
 
 <!-- BLOG-POST-LIST:START -->
-<a href="https://dukduk12.github.io/python/data-file-format-benchmark/"><img src="https://dukduk12.github.io/assets/images/python-data-formats/file-size-1m.svg" alt="[Python] CSV, JSON, Parquet, and Beyond: A Measured Guide to Data File Formats" width="720"></a>
-<p><a href="https://dukduk12.github.io/python/data-file-format-benchmark/"><strong>[Python] CSV, JSON, Parquet, and Beyond: A Measured Guide to Data File Formats</strong></a></p>
+<a href="https://dukduk12.github.io/chemistry/organic-reaction-recognition-cheatsheet/"><img src="https://dukduk12.github.io/assets/images/organic-reaction-cheatsheet/stepwise-mechanisms.svg" alt="[Organic Chemistry] Reaction Recognition Cheat Sheet: Structure, Mechanism, and Selectivity" width="720"></a>
+<p><a href="https://dukduk12.github.io/chemistry/organic-reaction-recognition-cheatsheet/"><strong>[Organic Chemistry] Reaction Recognition Cheat Sheet: Structure, Mechanism, and Selectivity</strong></a></p>
 <!-- BLOG-POST-LIST:END -->
 
 <sub><a href="https://dukduk12.github.io/posts/">VIEW ALL POSTS →</a></sub>
@@ -101,10 +101,10 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 
 <!-- LANGUAGE-STATS:START -->
 <pre>
-Jupyter Notebook    ■■■■■■■■■■■■□□□□□□□□   62.4%
-Python              ■■■■□□□□□□□□□□□□□□□□   20.9%
+Jupyter Notebook    ■■■■■■■■■■■■□□□□□□□□   61.7%
+Python              ■■■■□□□□□□□□□□□□□□□□   21.7%
 JavaScript          ■□□□□□□□□□□□□□□□□□□□    7.4%
-SCSS                ■□□□□□□□□□□□□□□□□□□□    5.0%
+SCSS                ■□□□□□□□□□□□□□□□□□□□    4.9%
 Java                ■□□□□□□□□□□□□□□□□□□□    2.3%
 HTML                ■□□□□□□□□□□□□□□□□□□□    1.7%
 </pre>
@@ -127,7 +127,7 @@ HTML                ■□□□□□□□□□□□□□□□□□□□
 <!-- GITHUB-OVERVIEW:START -->
 <pre>
 Days on GitHub      ····················     442
-Commits This Year   ····················     352
+Commits This Year   ····················     353
 Current Streak      ■■■■■■■■■■■■■■■■■■■■   40 days
 Longest Streak      ■■■■■■■■■■■■■■■■■■■■   40 days
 Public Repos        ····················      27
