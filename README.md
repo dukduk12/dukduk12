@@ -18,10 +18,7 @@
 
 <p align="center">
   <a href="https://dukduk12.github.io/"><img src="https://img.shields.io/badge/PORTFOLIO-202124?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="Portfolio"></a>
-  <a href="https://dukduk12.github.io/posts/"><img src="https://img.shields.io/badge/BLOG-202124?style=for-the-badge&amp;logo=jekyll&amp;logoColor=white" alt="Blog"></a>
-  <a href="https://medium.com/@sallyinner59"><img src="https://img.shields.io/badge/MEDIUM-202124?style=for-the-badge&amp;logo=medium&amp;logoColor=white" alt="Medium"></a>
   <a href="https://app.notion.com/p/Archive-339e765f6fbd807b927ee8e3db9528fd?source=copy_link"><img src="https://img.shields.io/badge/NOTION-202124?style=for-the-badge&amp;logo=notion&amp;logoColor=white" alt="Notion"></a>
-  <a href="https://github.com/dukduk12"><img src="https://img.shields.io/badge/GITHUB-202124?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub"></a>
   <a href="mailto:sallyinner59@gmail.com"><img src="https://img.shields.io/badge/EMAIL-202124?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email"></a>
 </p>
 
