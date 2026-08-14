@@ -65,8 +65,8 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 ### Blog
 
 <!-- BLOG-POST-LIST:START -->
-<a href="https://dukduk12.github.io/chemistry/organic-reaction-recognition-cheatsheet/"><img src="https://dukduk12.github.io/assets/images/organic-reaction-cheatsheet/stepwise-mechanisms.svg" alt="[Organic Chemistry] Reaction Recognition Cheat Sheet: Structure, Mechanism, and Selectivity" width="720"></a>
-<p><a href="https://dukduk12.github.io/chemistry/organic-reaction-recognition-cheatsheet/"><strong>[Organic Chemistry] Reaction Recognition Cheat Sheet: Structure, Mechanism, and Selectivity</strong></a></p>
+<a href="https://dukduk12.github.io/deep-learning/neural-network-fundamentals/"><img src="https://dukduk12.github.io/assets/images/neural-network-fundamentals/layer-shapes.svg" alt="[Deep Learning] Neural Network Fundamentals Cheat Sheet" width="720"></a>
+<p><a href="https://dukduk12.github.io/deep-learning/neural-network-fundamentals/"><strong>[Deep Learning] Neural Network Fundamentals Cheat Sheet</strong></a></p>
 <!-- BLOG-POST-LIST:END -->
 
 <sub><a href="https://dukduk12.github.io/posts/">VIEW ALL POSTS →</a></sub>
@@ -124,7 +124,7 @@ HTML                ■□□□□□□□□□□□□□□□□□□□
 <!-- GITHUB-OVERVIEW:START -->
 <pre>
 Days on GitHub      ····················     444
-Commits This Year   ····················     358
+Commits This Year   ····················     361
 Current Streak      ■■■■■■■■■■■■■■■■■■■■   42 days
 Longest Streak      ■■■■■■■■■■■■■■■■■■■■   42 days
 Public Repos        ····················      27
