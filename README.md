@@ -65,8 +65,7 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 ### Blog
 
 <!-- BLOG-POST-LIST:START -->
-<a href="https://dukduk12.github.io/deep-learning/neural-network-fundamentals/"><img src="https://dukduk12.github.io/assets/images/neural-network-fundamentals/layer-shapes.svg" alt="[Deep Learning] Neural Network Fundamentals Cheat Sheet" width="720"></a>
-<p><a href="https://dukduk12.github.io/deep-learning/neural-network-fundamentals/"><strong>[Deep Learning] Neural Network Fundamentals Cheat Sheet</strong></a></p>
+<p><a href="https://dukduk12.github.io/cpp/cpp-cheatsheet/"><strong>[C++] C++ Cheat Sheet: Pointers, Memory, OOP, and Templates</strong></a></p>
 <!-- BLOG-POST-LIST:END -->
 
 <sub><a href="https://dukduk12.github.io/posts/">VIEW ALL POSTS →</a></sub>
@@ -101,7 +100,7 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 Jupyter Notebook    ■■■■■■■■■■■■□□□□□□□□   61.7%
 Python              ■■■■□□□□□□□□□□□□□□□□   21.7%
 JavaScript          ■□□□□□□□□□□□□□□□□□□□    7.4%
-SCSS                ■□□□□□□□□□□□□□□□□□□□    4.9%
+SCSS                ■□□□□□□□□□□□□□□□□□□□    5.0%
 Java                ■□□□□□□□□□□□□□□□□□□□    2.3%
 HTML                ■□□□□□□□□□□□□□□□□□□□    1.7%
 </pre>
@@ -124,9 +123,9 @@ HTML                ■□□□□□□□□□□□□□□□□□□□
 <!-- GITHUB-OVERVIEW:START -->
 <pre>
 Days on GitHub      ····················     444
-Commits This Year   ····················     361
-Current Streak      ■■■■■■■■■■■■■■■■■■■■   42 days
-Longest Streak      ■■■■■■■■■■■■■■■■■■■■   42 days
+Commits This Year   ····················     365
+Current Streak      ■■■■■■■■■■■■■■■■■■■■   43 days
+Longest Streak      ■■■■■■■■■■■■■■■■■■■■   43 days
 Public Repos        ····················      27
 Private Repos       ····················      13
 </pre>
