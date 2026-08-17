@@ -65,7 +65,7 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 ### Blog
 
 <!-- BLOG-POST-LIST:START -->
-<p><a href="https://dukduk12.github.io/ai-engineering/agent-engineering-cheatsheet/"><strong>[AI Engineering] Agent Engineering Cheat Sheet: From Coding Sessions to Multi-Agent Systems</strong></a></p>
+<p><a href="https://dukduk12.github.io/ai/data-types-cheatsheet/"><strong>[AI] Data Types Cheat Sheet: A Deep Guide to Data Definitions</strong></a></p>
 <!-- BLOG-POST-LIST:END -->
 
 <sub><a href="https://dukduk12.github.io/posts/">VIEW ALL POSTS →</a></sub>
@@ -123,7 +123,7 @@ HTML                ■□□□□□□□□□□□□□□□□□□□
 <!-- GITHUB-OVERVIEW:START -->
 <pre>
 Days on GitHub      ····················     447
-Commits This Year   ····················     377
+Commits This Year   ····················     381
 Current Streak      ■■■■■■■■■■■■■■■■■■■■   45 days
 Longest Streak      ■■■■■■■■■■■■■■■■■■■■   45 days
 Public Repos        ····················      27
