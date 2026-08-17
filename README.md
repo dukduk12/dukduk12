@@ -65,7 +65,7 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 ### Blog
 
 <!-- BLOG-POST-LIST:START -->
-<p><a href="https://dukduk12.github.io/cpp/cpp-cheatsheet/"><strong>[C++] C++ Cheat Sheet: Pointers, Memory, OOP, and Templates</strong></a></p>
+<p><a href="https://dukduk12.github.io/ai-engineering/agent-engineering-cheatsheet/"><strong>[AI Engineering] Agent Engineering Cheat Sheet: From Coding Sessions to Multi-Agent Systems</strong></a></p>
 <!-- BLOG-POST-LIST:END -->
 
 <sub><a href="https://dukduk12.github.io/posts/">VIEW ALL POSTS →</a></sub>
@@ -97,12 +97,12 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 
 <!-- LANGUAGE-STATS:START -->
 <pre>
-Jupyter Notebook    ■■■■■■■■■■■■□□□□□□□□   61.7%
-Python              ■■■■□□□□□□□□□□□□□□□□   21.7%
-JavaScript          ■□□□□□□□□□□□□□□□□□□□    7.4%
-SCSS                ■□□□□□□□□□□□□□□□□□□□    5.0%
-Java                ■□□□□□□□□□□□□□□□□□□□    2.3%
-HTML                ■□□□□□□□□□□□□□□□□□□□    1.7%
+Jupyter Notebook    ■■■■■■■■■■■■□□□□□□□□   61.4%
+Python              ■■■■□□□□□□□□□□□□□□□□   21.6%
+JavaScript          ■□□□□□□□□□□□□□□□□□□□    7.3%
+SCSS                ■□□□□□□□□□□□□□□□□□□□    4.9%
+Java                ■□□□□□□□□□□□□□□□□□□□    2.2%
+HTML                ■□□□□□□□□□□□□□□□□□□□    2.0%
 </pre>
 <!-- LANGUAGE-STATS:END -->
 
@@ -123,9 +123,9 @@ HTML                ■□□□□□□□□□□□□□□□□□□□
 <!-- GITHUB-OVERVIEW:START -->
 <pre>
 Days on GitHub      ····················     447
-Commits This Year   ····················     367
-Current Streak      ■■■■■■■■■■■■■■■■■■■■   44 days
-Longest Streak      ■■■■■■■■■■■■■■■■■■■■   44 days
+Commits This Year   ····················     377
+Current Streak      ■■■■■■■■■■■■■■■■■■■■   45 days
+Longest Streak      ■■■■■■■■■■■■■■■■■■■■   45 days
 Public Repos        ····················      27
 Private Repos       ····················      13
 </pre>
