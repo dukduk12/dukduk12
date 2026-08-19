@@ -65,7 +65,8 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 ### Blog
 
 <!-- BLOG-POST-LIST:START -->
-<p><a href="https://dukduk12.github.io/ai/data-types-cheatsheet/"><strong>[AI] Data Types Cheat Sheet: A Deep Guide to Data Definitions</strong></a></p>
+<a href="https://dukduk12.github.io/ai/data-analysis-fundamentals/"><img src="https://dukduk12.github.io/assets/images/bio-photo.jpg" alt="[AI] Data Analysis Fundamentals: From Descriptive Statistics to Statistical Modeling" width="720"></a>
+<p><a href="https://dukduk12.github.io/ai/data-analysis-fundamentals/"><strong>[AI] Data Analysis Fundamentals: From Descriptive Statistics to Statistical Modeling</strong></a></p>
 <!-- BLOG-POST-LIST:END -->
 
 <sub><a href="https://dukduk12.github.io/posts/">VIEW ALL POSTS →</a></sub>
@@ -97,10 +98,10 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 
 <!-- LANGUAGE-STATS:START -->
 <pre>
-Jupyter Notebook    ■■■■■■■■■■■□□□□□□□□□   55.1%
-Python              ■■■■■■□□□□□□□□□□□□□□   29.7%
-JavaScript          ■□□□□□□□□□□□□□□□□□□□    6.6%
-SCSS                ■□□□□□□□□□□□□□□□□□□□    4.4%
+Jupyter Notebook    ■■■■■■■■■■■□□□□□□□□□   54.5%
+Python              ■■■■■■□□□□□□□□□□□□□□   29.3%
+JavaScript          ■□□□□□□□□□□□□□□□□□□□    7.3%
+SCSS                ■□□□□□□□□□□□□□□□□□□□    4.8%
 Java                ■□□□□□□□□□□□□□□□□□□□    2.0%
 HTML                ■□□□□□□□□□□□□□□□□□□□    1.8%
 </pre>
@@ -123,11 +124,11 @@ HTML                ■□□□□□□□□□□□□□□□□□□□
 <!-- GITHUB-OVERVIEW:START -->
 <pre>
 Days on GitHub      ····················     449
-Commits This Year   ····················     391
+Commits This Year   ····················     400
 Current Streak      ■■■■■■■■■■■■■■■■■■■■   47 days
 Longest Streak      ■■■■■■■■■■■■■■■■■■■■   47 days
 Public Repos        ····················      28
-Private Repos       ····················      12
+Private Repos       ····················      13
 </pre>
 <!-- GITHUB-OVERVIEW:END -->
 
