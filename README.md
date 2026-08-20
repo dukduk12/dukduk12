@@ -65,7 +65,7 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 ### Blog
 
 <!-- BLOG-POST-LIST:START -->
-<p><a href="https://dukduk12.github.io/ai/data-analysis-fundamentals/"><strong>[AI] Data Analysis Fundamentals: From Descriptive Statistics to Statistical Modeling</strong></a></p>
+<p><a href="https://dukduk12.github.io/ai/data-visualization-guide/"><strong>[AI] Data Visualization: Choosing Charts That Support Decisions</strong></a></p>
 <!-- BLOG-POST-LIST:END -->
 
 <sub><a href="https://dukduk12.github.io/posts/">VIEW ALL POSTS →</a></sub>
@@ -100,7 +100,7 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 Jupyter Notebook    ■■■■■■■■■■■□□□□□□□□□   53.6%
 Python              ■■■■■■□□□□□□□□□□□□□□   28.8%
 JavaScript          ■■□□□□□□□□□□□□□□□□□□    8.0%
-SCSS                ■□□□□□□□□□□□□□□□□□□□    5.2%
+SCSS                ■□□□□□□□□□□□□□□□□□□□    5.3%
 Java                ■□□□□□□□□□□□□□□□□□□□    2.0%
 HTML                ■□□□□□□□□□□□□□□□□□□□    1.9%
 </pre>
@@ -123,9 +123,9 @@ HTML                ■□□□□□□□□□□□□□□□□□□□
 <!-- GITHUB-OVERVIEW:START -->
 <pre>
 Days on GitHub      ····················     450
-Commits This Year   ····················     405
-Current Streak      ■■■■■■■■■■■■■■■■■■■■   47 days
-Longest Streak      ■■■■■■■■■■■■■■■■■■■■   47 days
+Commits This Year   ····················     411
+Current Streak      ■■■■■■■■■■■■■■■■■■■■   48 days
+Longest Streak      ■■■■■■■■■■■■■■■■■■■■   48 days
 Public Repos        ····················      28
 Private Repos       ····················      13
 </pre>
