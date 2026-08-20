@@ -65,7 +65,6 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 ### Blog
 
 <!-- BLOG-POST-LIST:START -->
-<a href="https://dukduk12.github.io/ai/data-analysis-fundamentals/"><img src="https://dukduk12.github.io/assets/images/bio-photo.jpg" alt="[AI] Data Analysis Fundamentals: From Descriptive Statistics to Statistical Modeling" width="720"></a>
 <p><a href="https://dukduk12.github.io/ai/data-analysis-fundamentals/"><strong>[AI] Data Analysis Fundamentals: From Descriptive Statistics to Statistical Modeling</strong></a></p>
 <!-- BLOG-POST-LIST:END -->
 
