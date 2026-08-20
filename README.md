@@ -65,7 +65,7 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 ### Blog
 
 <!-- BLOG-POST-LIST:START -->
-<p><a href="https://dukduk12.github.io/ai/data-visualization-guide/"><strong>[AI] Data Visualization: Choosing Charts That Support Decisions</strong></a></p>
+<p><a href="https://dukduk12.github.io/rust/rust-cheatsheet/"><strong>[Rust] Rust Cheatsheet: Syntax, Types, Ownership, Cargo, and Clippy</strong></a></p>
 <!-- BLOG-POST-LIST:END -->
 
 <sub><a href="https://dukduk12.github.io/posts/">VIEW ALL POSTS →</a></sub>
@@ -123,7 +123,7 @@ HTML                ■□□□□□□□□□□□□□□□□□□□
 <!-- GITHUB-OVERVIEW:START -->
 <pre>
 Days on GitHub      ····················     450
-Commits This Year   ····················     411
+Commits This Year   ····················     413
 Current Streak      ■■■■■■■■■■■■■■■■■■■■   48 days
 Longest Streak      ■■■■■■■■■■■■■■■■■■■■   48 days
 Public Repos        ····················      28
