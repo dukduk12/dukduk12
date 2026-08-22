@@ -98,11 +98,11 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 
 <!-- LANGUAGE-STATS:START -->
 <pre>
-Jupyter Notebook    ■■■■■■■■■■■□□□□□□□□□   53.3%
-Python              ■■■■■■□□□□□□□□□□□□□□   28.6%
-JavaScript          ■■□□□□□□□□□□□□□□□□□□    8.1%
-SCSS                ■□□□□□□□□□□□□□□□□□□□    5.5%
-HTML                ■□□□□□□□□□□□□□□□□□□□    2.0%
+Jupyter Notebook    ■■■■■■■■■■■□□□□□□□□□   52.5%
+Python              ■■■■■■□□□□□□□□□□□□□□   28.2%
+JavaScript          ■■□□□□□□□□□□□□□□□□□□    8.3%
+SCSS                ■□□□□□□□□□□□□□□□□□□□    6.2%
+HTML                ■□□□□□□□□□□□□□□□□□□□    2.4%
 Java                ■□□□□□□□□□□□□□□□□□□□    1.9%
 </pre>
 <!-- LANGUAGE-STATS:END -->
@@ -123,8 +123,8 @@ Java                ■□□□□□□□□□□□□□□□□□□□
 
 <!-- GITHUB-OVERVIEW:START -->
 <pre>
-Days on GitHub      ····················     451
-Commits This Year   ····················     422
+Days on GitHub      ····················     452
+Commits This Year   ····················     430
 Current Streak      ■■■■■■■■■■■■■■■■■■■■   50 days
 Longest Streak      ■■■■■■■■■■■■■■■■■■■■   50 days
 Public Repos        ····················      28
