@@ -65,7 +65,8 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 ### Blog
 
 <!-- BLOG-POST-LIST:START -->
-<p><a href="https://dukduk12.github.io/rust/rust-cheatsheet/"><strong>[Rust] Rust Cheatsheet: Syntax, Types, Ownership, Cargo, and Clippy</strong></a></p>
+<a href="https://dukduk12.github.io/ai/exploratory-data-analysis/"><img src="https://dukduk12.github.io/assets/images/bio-photo.jpg" alt="[Data Understanding] Exploratory Data Analysis: Understanding Data Before Modeling" width="720"></a>
+<p><a href="https://dukduk12.github.io/ai/exploratory-data-analysis/"><strong>[Data Understanding] Exploratory Data Analysis: Understanding Data Before Modeling</strong></a></p>
 <!-- BLOG-POST-LIST:END -->
 
 <sub><a href="https://dukduk12.github.io/posts/">VIEW ALL POSTS →</a></sub>
@@ -97,12 +98,12 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 
 <!-- LANGUAGE-STATS:START -->
 <pre>
-Jupyter Notebook    ■■■■■■■■■■■□□□□□□□□□   53.6%
-Python              ■■■■■■□□□□□□□□□□□□□□   28.8%
-JavaScript          ■■□□□□□□□□□□□□□□□□□□    8.0%
-SCSS                ■□□□□□□□□□□□□□□□□□□□    5.3%
-Java                ■□□□□□□□□□□□□□□□□□□□    2.0%
-HTML                ■□□□□□□□□□□□□□□□□□□□    1.9%
+Jupyter Notebook    ■■■■■■■■■■■□□□□□□□□□   53.3%
+Python              ■■■■■■□□□□□□□□□□□□□□   28.6%
+JavaScript          ■■□□□□□□□□□□□□□□□□□□    8.1%
+SCSS                ■□□□□□□□□□□□□□□□□□□□    5.5%
+HTML                ■□□□□□□□□□□□□□□□□□□□    2.0%
+Java                ■□□□□□□□□□□□□□□□□□□□    1.9%
 </pre>
 <!-- LANGUAGE-STATS:END -->
 
@@ -123,11 +124,11 @@ HTML                ■□□□□□□□□□□□□□□□□□□□
 <!-- GITHUB-OVERVIEW:START -->
 <pre>
 Days on GitHub      ····················     451
-Commits This Year   ····················     414
-Current Streak      ■■■■■■■■■■■■■■■■■■■■   49 days
-Longest Streak      ■■■■■■■■■■■■■■■■■■■■   49 days
+Commits This Year   ····················     422
+Current Streak      ■■■■■■■■■■■■■■■■■■■■   50 days
+Longest Streak      ■■■■■■■■■■■■■■■■■■■■   50 days
 Public Repos        ····················      28
-Private Repos       ····················      13
+Private Repos       ····················      14
 </pre>
 <!-- GITHUB-OVERVIEW:END -->
 
