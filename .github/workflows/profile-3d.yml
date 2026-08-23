@@ -36,7 +36,9 @@ jobs:
         run: |
           git apply ../.github/patches/profile-3d-custom.patch
           npm ci
-          npm run build
+          npm run clean
+          npm run tsc
+          npx ncc build dist0/src/index.js --license licenses.txt
       - name: Generate customized 3D contribution garden
         working-directory: .profile-3d-generator
         run: node . "${{ github.repository_owner }}"
