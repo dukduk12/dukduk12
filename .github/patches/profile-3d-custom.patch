@@ -28,7 +28,7 @@ index a7a73ff..6effcc4 100644
 +            .attr('x', util.toFixed(offsetX + (week - 7) * dx))
 +            .attr('y', util.toFixed(offsetY + (week + 7) * dy + 22))
 +            .attr('text-anchor', 'middle')
-+            .attr('fill', '#e4c96a')
++            .attr('fill', '#d8bf70')
 +            .attr('font-size', '14px')
 +            .attr('font-weight', '600')
 +            .text(cal.date.toLocaleString('en', { month: 'short' }));
@@ -38,20 +38,20 @@ diff --git a/src/create-pie-language.ts b/src/create-pie-language.ts
 index 3ab5648..7259e7a 100644
 --- a/src/create-pie-language.ts
 +++ b/src/create-pie-language.ts
-@@ -5 +5,12 @@ const OTHER_NAME = 'other';
--const OTHER_COLOR = '#444444';
-+const OTHER_COLOR = '#444444';
+@@ -5,2 +5,13 @@ const OTHER_NAME = 'other';
+ const OTHER_COLOR = '#444444';
 +const CHART_COLORS = [
-+    '#9fcdbd',
-+    '#e4c96a',
-+    '#2f3437',
-+    '#d9dddb',
-+    '#78aa9b',
-+    '#c5aa52',
-+    '#777d80',
-+    '#f1f2ef',
-+    '#aeb5b2',
++    '#b7d8cf',
++    '#f2dfa0',
++    '#dde4e1',
++    '#f6f3ea',
++    '#94bfb2',
++    '#d8bf70',
++    '#aab7b3',
++    '#f7f8f6',
++    '#c8d1ce',
 +];
+ 
 @@ -20,3 +31,3 @@ export const createPieLanguage = (
  
 -    const languages = userInfo.contributesLanguage.slice(0, 5);

@@ -46,8 +46,6 @@ jobs:
         run: |
           mkdir -p profile-3d-contrib
           cp .profile-3d-generator/profile-3d-contrib/profile-monochrome.svg profile-3d-contrib/profile-monochrome.svg
-      - name: Convert every panel to monochrome
-        run: python .github/scripts/grayscale_svg.py profile-3d-contrib/profile-monochrome.svg
       - name: Commit generated garden
         run: |
           git config user.name "github-actions[bot]"
