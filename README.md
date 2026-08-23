@@ -56,31 +56,13 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 
 <div align="center">
 
-## Latest Writing
+## 3D Contribution Garden
 
-<sub>ONE LATEST ARTICLE FROM EACH CHANNEL</sub>
+<sub>A YEAR OF BUILDING, GROWING ONE COMMIT AT A TIME</sub>
 
 <br>
 
-### Blog
-
-<!-- BLOG-POST-LIST:START -->
-<a href="https://dukduk12.github.io/ai/exploratory-data-analysis/"><img src="https://dukduk12.github.io/assets/images/bio-photo.jpg" alt="[Data Understanding] Exploratory Data Analysis: Understanding Data Before Modeling" width="720"></a>
-<p><a href="https://dukduk12.github.io/ai/exploratory-data-analysis/"><strong>[Data Understanding] Exploratory Data Analysis: Understanding Data Before Modeling</strong></a></p>
-<!-- BLOG-POST-LIST:END -->
-
-<sub><a href="https://dukduk12.github.io/posts/">VIEW ALL POSTS →</a></sub>
-
-<br><br>
-
-### Medium
-
-<!-- MEDIUM-POST-LIST:START -->
-<a href="https://medium.com/@sallyinner59/review-active-code-learning-benchmarking-sample-efficient-training-of-code-models-e472a4364f31?source=rss-4cc8da1abb9d------2"><img src="https://cdn-images-1.medium.com/max/654/1*jHrp8aGZ_iLAI4YTqs8ivA.png" alt="[Review] Active Code Learning : Benchmarking Sample-Efficient Training of Code Models" width="720"></a>
-<p><a href="https://medium.com/@sallyinner59/review-active-code-learning-benchmarking-sample-efficient-training-of-code-models-e472a4364f31?source=rss-4cc8da1abb9d------2"><strong>[Review] Active Code Learning : Benchmarking Sample-Efficient Training of Code Models</strong></a><br><sub>2026.07.18</sub></p>
-<!-- MEDIUM-POST-LIST:END -->
-
-<sub><a href="https://medium.com/@sallyinner59">VIEW ALL STORIES →</a></sub>
+<img src="./profile-3d-contrib/profile-monochrome.svg" alt="Animated monochrome 3D GitHub contribution garden" width="720">
 
 </div>
 

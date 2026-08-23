@@ -132,15 +132,19 @@ def medium_posts() -> list[Post]:
 
 
 def language_stats() -> list[tuple[str, float]]:
+    token = os.environ.get("GITHUB_TOKEN")
+    if not token:
+        raise RuntimeError("GITHUB_TOKEN is required to include private repositories")
+
     repositories = json.loads(
         fetch(
-            f"https://api.github.com/users/{GITHUB_USER}/repos"
-            "?type=owner&per_page=100&sort=updated"
+            "https://api.github.com/user/repos"
+            "?visibility=all&affiliation=owner&per_page=100&sort=updated"
         )
     )
     totals: dict[str, int] = {}
     for repository in repositories:
-        if repository.get("fork") or repository.get("private"):
+        if repository.get("fork"):
             continue
         languages = json.loads(fetch(repository["languages_url"]))
         for language, byte_count in languages.items():
@@ -148,7 +152,7 @@ def language_stats() -> list[tuple[str, float]]:
 
     total_bytes = sum(totals.values())
     if not total_bytes:
-        raise RuntimeError("No public repository language data found")
+        raise RuntimeError("No repository language data found")
 
     ranked = sorted(totals.items(), key=lambda item: item[1], reverse=True)
     return [
@@ -313,8 +317,6 @@ def main() -> int:
     errors: list[str] = []
 
     for tag, loader in (
-        ("BLOG-POST-LIST", blog_posts),
-        ("MEDIUM-POST-LIST", medium_posts),
         ("LANGUAGE-STATS", language_stats),
         ("GITHUB-OVERVIEW", github_stats),
     ):
@@ -329,7 +331,7 @@ def main() -> int:
         except Exception as error:
             errors.append(f"{tag}: {error}")
 
-    if len(errors) == 4:
+    if len(errors) == 2:
         print("\n".join(errors), file=sys.stderr)
         return 1
 

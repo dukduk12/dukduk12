@@ -1,4 +1,4 @@
-name: Update latest writing
+name: Update profile stats
 
 on:
   schedule:
@@ -7,11 +7,9 @@ on:
 
 permissions:
   contents: write
-  statuses: read
-  checks: read
 
 concurrency:
-  group: update-profile-writing
+  group: update-profile-stats
   cancel-in-progress: true
 
 jobs:
@@ -24,8 +22,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Fetch latest writing
+      - name: Refresh profile stats
         env:
+          # Personal token with access to the repositories included in the stats.
           GITHUB_TOKEN: ${{ secrets.GH_TOEKN }}
         run: python .github/scripts/update_writing.py
 
@@ -41,7 +40,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "content: refresh latest writing"
+          git commit -m "content: refresh profile stats"
 
           git fetch origin
           git rebase origin/main
