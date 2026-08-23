@@ -1,10 +1,6 @@
 name: Generate 3D contribution garden
 
 on:
-  push:
-    branches: [main]
-    paths-ignore:
-      - "profile-3d-contrib/**"
   schedule:
     # 00:00 KST every day (15:00 UTC on the previous day)
     - cron: "0 15 * * *"
