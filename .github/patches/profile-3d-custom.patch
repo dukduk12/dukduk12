@@ -10,7 +10,7 @@ diff --git a/src/create-3d-contrib.ts b/src/create-3d-contrib.ts
 index a7a73ff..6effcc4 100644
 --- a/src/create-3d-contrib.ts
 +++ b/src/create-3d-contrib.ts
-@@ -351,2 +351,22 @@ export const create3DContrib = (
+@@ -351,2 +351,23 @@ export const create3DContrib = (
      });
 +
 +    let previousMonth = -1;
@@ -25,11 +25,12 @@ index a7a73ff..6effcc4 100644
 +        );
 +        group
 +            .append('text')
-+            .attr('x', util.toFixed(offsetX + week * dx))
-+            .attr('y', util.toFixed(offsetY + week * dy - 12))
++            .attr('x', util.toFixed(offsetX + (week - 7) * dx))
++            .attr('y', util.toFixed(offsetY + (week + 7) * dy + 22))
 +            .attr('text-anchor', 'middle')
-+            .attr('class', 'fill-weak')
++            .attr('fill', '#e4c96a')
 +            .attr('font-size', '14px')
++            .attr('font-weight', '600')
 +            .text(cal.date.toLocaleString('en', { month: 'short' }));
 +    });
  };
@@ -37,16 +38,40 @@ diff --git a/src/create-pie-language.ts b/src/create-pie-language.ts
 index 3ab5648..7259e7a 100644
 --- a/src/create-pie-language.ts
 +++ b/src/create-pie-language.ts
-@@ -20,3 +20,3 @@ export const createPieLanguage = (
+@@ -5 +5,12 @@ const OTHER_NAME = 'other';
+-const OTHER_COLOR = '#444444';
++const OTHER_COLOR = '#444444';
++const CHART_COLORS = [
++    '#9fcdbd',
++    '#e4c96a',
++    '#2f3437',
++    '#d9dddb',
++    '#78aa9b',
++    '#c5aa52',
++    '#777d80',
++    '#f1f2ef',
++    '#aeb5b2',
++];
+@@ -20,3 +31,3 @@ export const createPieLanguage = (
  
 -    const languages = userInfo.contributesLanguage.slice(0, 5);
 +    const languages = userInfo.contributesLanguage.slice(0, 8);
      const sumContrib = languages
-@@ -44,3 +44,3 @@ export const createPieLanguage = (
+@@ -44,3 +55,3 @@ export const createPieLanguage = (
  
 -    const row = 8;
 +    const row = 11;
      const offset = (row - languages.length) / 2 + 0.5;
+@@ -70,3 +81,3 @@ export const createPieLanguage = (
+         .attr('height', fontSize)
+-        .attr('fill', (d) => d.data.color)
++        .attr('fill', (d) => CHART_COLORS[d.index % CHART_COLORS.length])
+         .attr('class', 'stroke-bg')
+@@ -117,3 +128,3 @@ export const createPieLanguage = (
+         .attr('d', arc)
+-        .style('fill', (d) => d.data.color) // style -> attr ?
++        .style('fill', (d) => CHART_COLORS[d.index % CHART_COLORS.length])
+         .attr('class', 'stroke-bg')
 diff --git a/src/create-svg.ts b/src/create-svg.ts
 index 12a9165..5be511c 100644
 --- a/src/create-svg.ts
@@ -143,11 +168,11 @@ index 12a9165..5be511c 100644
 +                .attr('class', 'fill-fg');
 +        };
 +
-+        appendMetric((width * 5) / 10, longestStreak, 'longest streak');
++        appendMetric((width * 5) / 10, longestStreak, 'streak(long)');
 +        appendMetric(
 +            (width * 7) / 10,
 +            userInfo.totalRepositoryCount,
-+            'repositories',
++            'repo',
 +        );
  
 diff --git a/src/type.ts b/src/type.ts

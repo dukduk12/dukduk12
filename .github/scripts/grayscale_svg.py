@@ -6,9 +6,22 @@ from pathlib import Path
 
 
 HEX_COLOR = re.compile(r"#[0-9a-fA-F]{6}\b")
+PRESERVED_COLORS = {
+    "#9fcdbd",  # muted mint
+    "#e4c96a",  # muted yellow and month labels
+    "#2f3437",
+    "#d9dddb",
+    "#78aa9b",
+    "#c5aa52",
+    "#777d80",
+    "#f1f2ef",
+    "#aeb5b2",
+}
 
 
 def grayscale(match: re.Match[str]) -> str:
+    if match.group().lower() in PRESERVED_COLORS:
+        return match.group()
     value = match.group()[1:]
     red, green, blue = (int(value[index : index + 2], 16) for index in (0, 2, 4))
     luminance = round(0.2126 * red + 0.7152 * green + 0.0722 * blue)
