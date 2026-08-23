@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="214" viewBox="0 0 720 214" role="img" aria-label="GitHub overview">
+<style>.bg{fill:#fff;stroke:#d0d7de}.metric,.title{fill:#24292f}.caption,.note{fill:#57606a}.axis{stroke:#d0d7de}text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.metric{font-size:18px;font-weight:650}.caption{font-size:9px}.title{font-size:12px;font-weight:600}.note{font-size:11px}@media(prefers-color-scheme:dark){.bg{fill:#0d1117;stroke:#30363d}.metric,.title{fill:#f0f6fc}.caption,.note{fill:#8b949e}.axis{stroke:#30363d}}</style>
+<rect class="bg" x=".5" y=".5" width="719" height="213" rx="8"/>
+<text class="metric" x="36" y="36">443</text><text class="caption" x="36" y="54">COMMITS THIS YEAR</text><text class="metric" x="206" y="36">51d</text><text class="caption" x="206" y="54">CURRENT STREAK</text><text class="metric" x="376" y="36">51d</text><text class="caption" x="376" y="54">LONGEST STREAK</text><text class="metric" x="546" y="36">42</text><text class="caption" x="546" y="54">REPOSITORIES</text>
+<text class="title" x="18" y="78">ACTIVITY · LAST 12 MONTHS</text><line class="axis" x1="18" y1="174.5" x2="702" y2="174.5"/><text class="note" x="360" y="132" text-anchor="middle">Monthly graph will appear after the next profile stats update.</text>
+</svg>

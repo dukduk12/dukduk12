@@ -1,6 +1,11 @@
 name: Generate 3D contribution garden
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/profile-3d-monochrome.json"
+      - ".github/workflows/profile-3d.yml"
   schedule:
     # 03:12 KST every day
     - cron: "12 18 * * *"
@@ -16,35 +21,27 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-
     steps:
       - name: Check out profile repository
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
-
-      - name: Generate 3D contribution garden
+      - name: Generate monochrome 3D contribution garden
         uses: yoshi389111/github-profile-3d-contrib@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: .github/profile-3d-monochrome.json
-
       - name: Commit generated garden
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add profile-3d-contrib
-
           if git diff --staged --quiet; then
             echo "3D contribution garden is already current."
             exit 0
           fi
-
           git commit -m "content: refresh 3D contribution garden"
-
           git fetch origin
           git rebase origin/main
-
           git push

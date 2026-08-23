@@ -21,7 +21,8 @@ MEDIUM_FEED = "https://medium.com/feed/@sallyinner59"
 USER_AGENT = "dukduk12-profile-readme/1.0"
 MAX_POSTS = 1
 GITHUB_USER = "dukduk12"
-MAX_LANGUAGES = 6
+MAX_LANGUAGES = 10
+ASSETS = Path("assets")
 
 
 @dataclass(frozen=True)
@@ -179,13 +180,33 @@ def render_posts(posts: list[Post]) -> str:
 
 
 def render_languages(languages: list[tuple[str, float]]) -> str:
-    rows = ["<pre>"]
-    for language, percentage in languages:
-        filled = max(1, round(percentage / 5))
-        bar = "■" * filled + "□" * (20 - filled)
-        rows.append(f"{language[:18]:<18}  {bar}  {percentage:>5.1f}%")
-    rows.append("</pre>")
-    return "\n".join(rows)
+    width = 720
+    row_height = 28
+    height = 54 + row_height * len(languages)
+    rows = []
+    for index, (language, percentage) in enumerate(languages):
+        y = 48 + index * row_height
+        bar_width = max(2, round(percentage / 100 * 430))
+        rows.append(
+            f'<text class="label" x="18" y="{y + 12}">{html.escape(language)}</text>'
+            f'<rect class="track" x="180" y="{y}" width="430" height="12" rx="6"/>'
+            f'<rect class="bar" x="180" y="{y}" width="{bar_width}" height="12" rx="6"/>'
+            f'<text class="value" x="700" y="{y + 11}" text-anchor="end">{percentage:.1f}%</text>'
+        )
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="Most used languages">
+<style>
+  .bg {{ fill:#fff; stroke:#d0d7de }} .title,.label {{ fill:#24292f }} .value {{ fill:#57606a }}
+  .track {{ fill:#eaeef2 }} .bar {{ fill:#24292f }} text {{ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif }}
+  .title {{ font-size:15px;font-weight:600 }} .label,.value {{ font-size:12px }}
+  @media (prefers-color-scheme:dark) {{ .bg {{ fill:#0d1117;stroke:#30363d }} .title,.label {{ fill:#f0f6fc }} .value {{ fill:#8b949e }} .track {{ fill:#21262d }} .bar {{ fill:#f0f6fc }} }}
+</style>
+<rect class="bg" x=".5" y=".5" width="719" height="{height - 1}" rx="8"/>
+<text class="title" x="18" y="27">LANGUAGE DISTRIBUTION</text>
+{''.join(rows)}
+</svg>'''
+    ASSETS.mkdir(exist_ok=True)
+    (ASSETS / "languages.svg").write_text(svg, encoding="utf-8")
+    return '<img src="./assets/languages.svg" alt="Monochrome language distribution chart" width="720">'
 
 
 def github_stats() -> dict:
@@ -195,7 +216,6 @@ def github_stats() -> dict:
       user(login: $login) {
         createdAt
         contributionsCollection {
-          totalCommitContributions
           contributionCalendar {
             weeks {
               contributionDays {
@@ -204,6 +224,7 @@ def github_stats() -> dict:
               }
             }
           }
+          totalCommitContributions
         }
         repositories(ownerAffiliations: OWNER, privacy: PUBLIC) {
           totalCount
@@ -271,34 +292,63 @@ def github_stats() -> dict:
         "longest": longest_streak,
         "repos": user["repositories"]["totalCount"],
         "private_repos": user["privateRepos"]["totalCount"],
+        "months": monthly_contributions(all_days),
     }
 
 
+def monthly_contributions(all_days: dict[str, int]) -> list[tuple[str, int]]:
+    months: dict[str, int] = {}
+    for date, count in all_days.items():
+        key = date[:7]
+        months[key] = months.get(key, 0) + count
+    return sorted(months.items())[-12:]
+
+
 def render_overview(stats: dict) -> str:
-    days = stats["days_on_github"]
     commits = stats["commits"]
     cur = stats["current"]
     lng = stats["longest"]
     rep = stats["repos"]
     prv = stats["private_repos"]
 
-    max_streak = max(lng, 1)
-    BAR = 20
-    dot = "\u00b7"
+    metrics = [
+        ("COMMITS THIS YEAR", f"{commits:,}"),
+        ("CURRENT STREAK", f"{cur}d"),
+        ("LONGEST STREAK", f"{lng}d"),
+        ("REPOSITORIES", str(rep + prv)),
+    ]
+    cards = []
+    for index, (label, value) in enumerate(metrics):
+        x = 36 + index * 170
+        cards.append(f'<text class="metric" x="{x}" y="36">{value}</text><text class="caption" x="{x}" y="54">{label}</text>')
 
-    def streak_bar(val: int) -> str:
-        filled = max(1, round(val / max_streak * BAR)) if val > 0 else 0
-        return "\u25a0" * filled + "\u25a1" * (BAR - filled)
-
-    rows = ["<pre>"]
-    rows.append(f"{'Days on GitHub':<18}  {dot * BAR}  {days:>6,}")
-    rows.append(f"{'Commits This Year':<18}  {dot * BAR}  {commits:>6,}")
-    rows.append(f"{'Current Streak':<18}  {streak_bar(cur)}  {cur:>3} days")
-    rows.append(f"{'Longest Streak':<18}  {streak_bar(lng)}  {lng:>3} days")
-    rows.append(f"{'Public Repos':<18}  {dot * BAR}  {rep:>6}")
-    rows.append(f"{'Private Repos':<18}  {dot * BAR}  {prv:>6}")
-    rows.append("</pre>")
-    return "\n".join(rows)
+    months = stats["months"]
+    peak = max((count for _, count in months), default=1)
+    bars = []
+    for index, (month, count) in enumerate(months):
+        x = 25 + index * 56
+        bar_height = max(2, round(count / peak * 92))
+        y = 174 - bar_height
+        bars.append(
+            f'<rect class="monthbar" x="{x}" y="{y}" width="32" height="{bar_height}" rx="4">'
+            f'<title>{month}: {count} contributions</title></rect>'
+            f'<text class="month" x="{x + 16}" y="193" text-anchor="middle">{month[5:]}</text>'
+        )
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="720" height="214" viewBox="0 0 720 214" role="img" aria-label="GitHub overview and monthly contributions">
+<style>
+  .bg {{ fill:#fff;stroke:#d0d7de }} .metric,.title {{ fill:#24292f }} .caption,.month {{ fill:#57606a }} .axis {{ stroke:#d0d7de }} .monthbar {{ fill:#24292f }}
+  text {{ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif }} .metric {{ font-size:18px;font-weight:650 }} .caption,.month {{ font-size:9px }} .title {{ font-size:12px;font-weight:600 }}
+  @media (prefers-color-scheme:dark) {{ .bg {{ fill:#0d1117;stroke:#30363d }} .metric,.title {{ fill:#f0f6fc }} .caption,.month {{ fill:#8b949e }} .axis {{ stroke:#30363d }} .monthbar {{ fill:#f0f6fc }} }}
+</style>
+<rect class="bg" x=".5" y=".5" width="719" height="213" rx="8"/>
+{''.join(cards)}
+<text class="title" x="18" y="78">ACTIVITY · LAST 12 MONTHS</text>
+<line class="axis" x1="18" y1="174.5" x2="702" y2="174.5"/>
+{''.join(bars)}
+</svg>'''
+    ASSETS.mkdir(exist_ok=True)
+    (ASSETS / "overview.svg").write_text(svg, encoding="utf-8")
+    return '<img src="./assets/overview.svg" alt="Monochrome GitHub overview with monthly contribution graph" width="720">'
 
 
 def replace_block(document: str, tag: str, content: str) -> str:

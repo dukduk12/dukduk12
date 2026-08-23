@@ -74,19 +74,12 @@ I enjoy building **AI-powered services end to end**—from framing the problem a
 
 ## Languages
 
-<sub>GENERATED FROM PUBLIC REPOSITORIES VIA THE GITHUB API · UPDATED EVERY 6 HOURS</sub>
+<sub>PUBLIC + PRIVATE REPOSITORIES · UPDATED EVERY 6 HOURS</sub>
 
 <br>
 
 <!-- LANGUAGE-STATS:START -->
-<pre>
-Jupyter Notebook    ■■■■■■■■■□□□□□□□□□□□   44.4%
-Python              ■■■■■□□□□□□□□□□□□□□□   25.0%
-TypeScript          ■■□□□□□□□□□□□□□□□□□□   12.0%
-JavaScript          ■□□□□□□□□□□□□□□□□□□□    6.5%
-Java                ■□□□□□□□□□□□□□□□□□□□    5.0%
-SCSS                ■□□□□□□□□□□□□□□□□□□□    4.4%
-</pre>
+<img src="./assets/languages.svg" alt="Monochrome language distribution chart" width="720">
 <!-- LANGUAGE-STATS:END -->
 
 </div>
@@ -104,14 +97,7 @@ SCSS                ■□□□□□□□□□□□□□□□□□□□
 <br>
 
 <!-- GITHUB-OVERVIEW:START -->
-<pre>
-Days on GitHub      ····················     452
-Commits This Year   ····················     443
-Current Streak      ■■■■■■■■■■■■■■■■■■■■   51 days
-Longest Streak      ■■■■■■■■■■■■■■■■■■■■   51 days
-Public Repos        ····················      28
-Private Repos       ····················      14
-</pre>
+<img src="./assets/overview.svg" alt="Monochrome GitHub overview with monthly contribution graph" width="720">
 <!-- GITHUB-OVERVIEW:END -->
 
 </div>
