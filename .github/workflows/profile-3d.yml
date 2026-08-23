@@ -3,13 +3,11 @@ name: Generate 3D contribution garden
 on:
   push:
     branches: [main]
-    paths:
-      - ".github/profile-3d-monochrome.json"
-      - ".github/patches/profile-3d-custom.patch"
-      - ".github/workflows/profile-3d.yml"
+    paths-ignore:
+      - "profile-3d-contrib/**"
   schedule:
-    # 03:12 KST every day
-    - cron: "12 18 * * *"
+    # 00:00 KST every day (15:00 UTC on the previous day)
+    - cron: "0 15 * * *"
   workflow_dispatch:
 
 permissions:
