@@ -52,22 +52,35 @@ index 3ab5648..7259e7a 100644
 +    '#aeb5b2',
 +];
  
-@@ -20,3 +31,3 @@ export const createPieLanguage = (
+@@ -20,8 +31,15 @@ export const createPieLanguage = (
  
 -    const languages = userInfo.contributesLanguage.slice(0, 5);
-+    const languages = userInfo.contributesLanguage.slice(0, 8);
++    const excludedLanguages = new Set(['HTML', 'SCSS']);
++    const includedLanguages = userInfo.contributesLanguage.filter(
++        (language) => !excludedLanguages.has(language.language),
++    );
++    const languages = includedLanguages.slice(0, 8);
      const sumContrib = languages
-@@ -44,3 +55,3 @@ export const createPieLanguage = (
+         .map((lang) => lang.contributions)
+         .reduce((a, b) => a + b, 0);
+-    const otherContributions = userInfo.totalCommitContributions - sumContrib;
++    const otherContributions = includedLanguages
++        .slice(8)
++        .map((lang) => lang.contributions)
++        .reduce((a, b) => a + b, 0);
+     if (0 < otherContributions) {
+         languages.push({
+@@ -44,3 +62,3 @@ export const createPieLanguage = (
  
 -    const row = 8;
 +    const row = 11;
      const offset = (row - languages.length) / 2 + 0.5;
-@@ -70,3 +81,3 @@ export const createPieLanguage = (
+@@ -70,3 +88,3 @@ export const createPieLanguage = (
          .attr('height', fontSize)
 -        .attr('fill', (d) => d.data.color)
 +        .attr('fill', (d) => CHART_COLORS[d.index % CHART_COLORS.length])
          .attr('class', 'stroke-bg')
-@@ -117,3 +128,3 @@ export const createPieLanguage = (
+@@ -117,3 +135,3 @@ export const createPieLanguage = (
          .attr('d', arc)
 -        .style('fill', (d) => d.data.color) // style -> attr ?
 +        .style('fill', (d) => CHART_COLORS[d.index % CHART_COLORS.length])
